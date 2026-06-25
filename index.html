@@ -4,559 +4,485 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>MangoAdvice Daily Brief - 2026-06-25</title>
+  <title>MangoAdvice Brief Archive</title>
   <style>
     :root {
-      --ink: #172016;
-      --muted: #5d675b;
-      --paper: #fff9e8;
-      --panel: #ffffff;
-      --lime: #bcf43d;
-      --mango: #ffb000;
-      --leaf: #1e7b4f;
-      --berry: #e4558d;
-      --sky: #39a3ff;
-      --line: rgba(23, 32, 22, 0.16);
-      --shadow: 0 18px 50px rgba(32, 48, 26, 0.14);
+      color-scheme: light;
+      --bg: #fbf6e7;
+      --panel: #fffef7;
+      --panel-soft: #f4efd9;
+      --ink: #162014;
+      --muted: #66715f;
+      --line: rgba(22, 32, 20, 0.16);
+      --line-strong: #162014;
+      --mango: #ffb21a;
+      --lime: #c8f23c;
+      --leaf: #18734d;
+      --berry: #d44f87;
+      --sky: #358ad7;
+      --shadow: 0 18px 44px rgba(42, 47, 30, 0.1);
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --ink: #f7f6ea;
-        --muted: #c7ccb9;
-        --paper: #101711;
-        --panel: #172218;
-        --line: rgba(247, 246, 234, 0.16);
-        --shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+        color-scheme: dark;
+        --bg: #10150f;
+        --panel: #171f16;
+        --panel-soft: #202a1c;
+        --ink: #f4f4e8;
+        --muted: #bbc5b1;
+        --line: rgba(244, 244, 232, 0.16);
+        --line-strong: #eff2df;
+        --shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
       }
     }
 
     * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
     body {
-      margin: 0;
       background:
-        radial-gradient(circle at 14% 0%, rgba(188, 244, 61, 0.33), transparent 28rem),
-        radial-gradient(circle at 86% 8%, rgba(255, 176, 0, 0.28), transparent 24rem),
-        var(--paper);
+        linear-gradient(180deg, rgba(200, 242, 60, 0.16), transparent 18rem),
+        radial-gradient(circle at top right, rgba(255, 178, 26, 0.18), transparent 28rem),
+        var(--bg);
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
+      font-family: var(--font);
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
-
-    main {
-      width: min(1120px, calc(100% - 28px));
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+    .page-shell {
+      width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 28px 0 44px;
+      padding: 18px 0 42px;
     }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 18px;
-      padding: 20px 0 24px;
+    .top-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 0 18px;
+      border-bottom: 1px solid var(--line);
     }
-
-    .brand {
+    .brand-link {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       font-weight: 900;
-      letter-spacing: 0;
     }
-
-    .logo {
+    .brand-mark {
       display: grid;
       place-items: center;
-      width: 42px;
-      height: 42px;
-      border: 2px solid var(--ink);
+      width: 34px;
+      height: 34px;
+      border: 2px solid var(--line-strong);
       border-radius: 8px;
       background: linear-gradient(135deg, var(--lime), var(--mango));
-      box-shadow: 5px 5px 0 var(--ink);
-      color: #172016;
-      font-weight: 950;
+      color: #162014;
+      box-shadow: 3px 3px 0 var(--line-strong);
     }
-
+    .nav-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .nav-actions a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 254, 247, 0.6);
+      padding: 7px 11px;
+      color: var(--ink);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+    .brief-hero, .archive-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+      gap: 24px;
+      align-items: end;
+      padding: 36px 0 24px;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--leaf);
+      font-size: 0.73rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, h4, p { margin-top: 0; }
     h1 {
-      max-width: 860px;
-      margin: 12px 0 0;
-      font-size: clamp(2.25rem, 7vw, 5.4rem);
-      line-height: 0.95;
+      max-width: 760px;
+      margin-bottom: 10px;
+      font-size: clamp(2.8rem, 9vw, 6.1rem);
+      line-height: 0.9;
       letter-spacing: 0;
     }
-
-    .hero p {
-      max-width: 680px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.04rem;
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(1.35rem, 3vw, 2.05rem);
+      line-height: 1;
+      letter-spacing: 0;
     }
-
-    .stats {
+    .hero-meta, .hero-copy, .archive-link p, .latest-card p, .footer {
+      color: var(--muted);
+    }
+    .hero-meta {
+      margin-bottom: 4px;
+      font-weight: 800;
+    }
+    .hero-copy {
+      max-width: 680px;
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    .hero-panel, .latest-card, .summary-card, .source-panel, .notice {
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--line-strong);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--panel) 92%, transparent);
+      box-shadow: var(--shadow);
+    }
+    .hero-panel, .latest-card {
+      display: block;
+      padding: 16px;
+    }
+    .hero-panel span, .latest-card span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .hero-panel strong, .latest-card strong {
+      display: block;
+      margin: 5px 0;
+      font-size: 2.35rem;
+      line-height: 1;
+    }
+    .hero-panel p, .latest-card p {
+      margin-bottom: 0;
+      font-size: 0.92rem;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 20px;
+      align-items: start;
+    }
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 4px 0 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line-strong);
+    }
+    .small-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .pick-list {
+      display: grid;
+      gap: 12px;
+    }
+    .pick-card {
+      display: grid;
+      grid-template-columns: 82px minmax(0, 1fr);
+      gap: 0;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--mango);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(42, 47, 30, 0.06);
+      overflow: hidden;
+    }
+    .score-rail {
+      display: grid;
+      align-content: start;
+      justify-items: center;
+      gap: 8px;
+      padding: 14px 10px;
+      background: linear-gradient(180deg, var(--lime), rgba(255, 178, 26, 0.45));
+      color: #162014;
+      border-right: 1px solid var(--line);
+    }
+    .score-rail span {
+      font-size: 0.75rem;
+      font-weight: 900;
+    }
+    .score-rail strong {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      border: 2px solid #162014;
+      border-radius: 50%;
+      background: #fffef7;
+      font-size: 1.2rem;
+      box-shadow: 3px 3px 0 #162014;
+    }
+    .pick-content {
+      padding: 14px 16px 15px;
+    }
+    .pick-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 8px;
+    }
+    .pick-head h3 {
+      margin-bottom: 2px;
+      font-size: clamp(1.16rem, 2vw, 1.38rem);
+      line-height: 1.08;
+    }
+    .pick-head h3 span {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+    .pick-head p, .context-line {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+    .source-badge, .pill, .evidence, .source-chip {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 0.73rem;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .source-strong, .source-ready { border-color: color-mix(in srgb, var(--leaf) 52%, var(--line)); }
+    .source-adequate, .source-partial { border-color: color-mix(in srgb, var(--mango) 65%, var(--line)); }
+    .source-thin, .source-missing { border-color: color-mix(in srgb, var(--berry) 65%, var(--line)); }
+    .why-now {
+      margin-bottom: 8px;
+      font-size: 0.96rem;
+    }
+    .context-line {
+      margin-bottom: 10px;
+    }
+    .brief-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
-      margin-top: 8px;
+      margin: 10px 0;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
-
-    .stat, .pick, .notice, .source-panel {
-      border: 2px solid var(--ink);
-      background: var(--panel);
-      box-shadow: var(--shadow);
-    }
-
-    .stat {
-      min-height: 94px;
-      padding: 14px;
-      border-radius: 8px;
-    }
-
-    .stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.78rem;
-      font-weight: 800;
+    .mini h4 {
+      margin-bottom: 5px;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
-
-    .stat strong {
-      display: block;
-      margin-top: 4px;
-      font-size: 1.55rem;
-      line-height: 1;
-    }
-
-    .pick-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 14px;
-    }
-
-    .pick {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      padding: 18px;
-    }
-
-    .pick::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 9px;
-      background: linear-gradient(var(--lime), var(--mango), var(--berry));
-    }
-
-    .pick-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 14px;
-      padding-left: 8px;
-    }
-
-    .ticker {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 8px;
-    }
-
-    .ticker strong {
-      font-size: 1.45rem;
-      line-height: 1;
-    }
-
-    .ticker span, .meta, .subtle {
-      color: var(--muted);
-    }
-
-    .score {
-      flex: 0 0 auto;
-      display: grid;
-      place-items: center;
-      width: 68px;
-      height: 68px;
-      border: 2px solid var(--ink);
-      border-radius: 50%;
-      background: var(--lime);
-      color: #172016;
-      font-size: 1.35rem;
-      font-weight: 950;
-      box-shadow: 4px 4px 0 var(--ink);
-    }
-
-    .pick-body {
-      display: grid;
-      gap: 12px;
-      padding-left: 8px;
-    }
-
-    .pick-body p {
-      margin: 0;
-    }
-
-    .pill-row, .evidence-row, .source-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .pill, .source-chip, .evidence {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 9px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      background: rgba(255, 255, 255, 0.55);
-      color: var(--ink);
-      text-decoration: none;
-    }
-
-    .source-chip strong {
-      text-transform: uppercase;
-      font-size: 0.68rem;
-    }
-
-    .source-ready { border-color: rgba(30, 123, 79, 0.45); }
-    .source-partial { border-color: rgba(255, 176, 0, 0.65); }
-    .source-missing { border-color: rgba(228, 85, 141, 0.65); }
-
-    .columns {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .mini h3 {
-      margin: 0 0 5px;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-    }
-
     .mini ul {
       margin: 0;
       padding-left: 18px;
       color: var(--muted);
+      font-size: 0.82rem;
     }
-
-    .source-panel, .notice {
-      margin-top: 18px;
-      padding: 16px;
-      border-radius: 8px;
+    .pill-row, .evidence-row, .source-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
     }
-
-    .source-panel h2, .notice h2 {
-      margin: 0 0 10px;
-      font-size: 1rem;
+    .pill, .evidence, .source-chip {
+      background: color-mix(in srgb, var(--panel-soft) 68%, transparent);
+      color: var(--ink);
     }
-
-    footer {
-      margin-top: 22px;
+    .side-column {
+      position: sticky;
+      top: 12px;
+      display: grid;
+      gap: 12px;
+    }
+    .summary-card, .source-panel, .notice {
+      padding: 14px;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .metric-row:last-child { border-bottom: 0; }
+    .metric-row span { color: var(--muted); font-weight: 800; }
+    .metric-row strong { font-size: 1.1rem; }
+    .notice ul {
+      margin: 0;
+      padding-left: 18px;
       color: var(--muted);
-      font-size: 0.84rem;
+      font-size: 0.86rem;
     }
-
-    @media (max-width: 760px) {
-      main { width: min(100% - 20px, 1120px); padding-top: 18px; }
-      .stats, .columns { grid-template-columns: 1fr; }
-      .pick-header { align-items: center; }
-      .score { width: 58px; height: 58px; font-size: 1.12rem; }
+    .source-chip {
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+    }
+    .source-chip strong {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+    }
+    .archive-hero {
+      align-items: center;
+    }
+    .archive-shell {
+      max-width: 880px;
+    }
+    .archive-list {
+      border-top: 1px solid var(--line-strong);
+    }
+    .archive-link {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .archive-link:hover {
+      text-decoration: none;
+    }
+    .archive-date {
+      display: inline-flex;
+      margin-bottom: 5px;
+      color: var(--leaf);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+    .archive-link strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 1.26rem;
+      line-height: 1.1;
+    }
+    .archive-link p {
+      max-width: 720px;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+    .archive-open {
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .footer {
+      max-width: 780px;
+      margin-top: 24px;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 900px) {
+      .brief-hero, .archive-hero, .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .side-column {
+        position: static;
+        grid-row: 1;
+      }
+      .brief-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 620px) {
+      .page-shell {
+        width: min(100% - 22px, 1120px);
+        padding-top: 12px;
+      }
+      .top-nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-actions {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      h1 {
+        font-size: clamp(2.4rem, 16vw, 4rem);
+      }
+      .pick-card {
+        grid-template-columns: 1fr;
+      }
+      .score-rail {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .score-rail strong {
+        width: 48px;
+        height: 48px;
+      }
+      .pick-head {
+        flex-direction: column;
+      }
+      .source-badge {
+        width: fit-content;
+      }
+      .archive-link {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
     }
   </style>
 </head>
-<body>
-  <main>
-    <section class="hero" aria-labelledby="title">
-      <div class="brand"><span class="logo">M</span><span>MangoAdvice</span></div>
-      <div>
-        <h1 id="title">Daily Brief</h1>
-        <p>Thu, Jun 25, 2026. Research summary only. Not financial advice, not a buy/sell instruction, and not an automatic trading signal.</p>
-      </div>
-      <div class="stats" aria-label="Run summary">
-        <div class="stat"><span>Top Pick</span><strong>NVDA</strong></div>
-        <div class="stat"><span>Average Score</span><strong>75</strong></div>
-        <div class="stat"><span>Source Health</span><strong>9/15</strong><span>ready providers</span></div>
-      </div>
-    </section>
+<body class="archive-page">
+  <div class="page-shell">
+      <nav class="top-nav" aria-label="Public brief navigation">
+    <a class="brand-link" href="./"><span class="brand-mark">M</span><span>MangoAdvice</span></a>
+    <div class="nav-actions">
+      <a href="./">Archive</a>
+      <a href="./latest/">Latest</a>
+    </div>
+  </nav>
+      <header class="archive-hero">
+        <div>
+          <p class="eyebrow">Public archive</p>
+          <h1>MangoAdvice Brief Archive</h1>
+          <p class="hero-copy">A lightweight GitHub Pages library of sanitized daily opportunity summaries. The full research app stays local.</p>
+        </div>
+        <a class="latest-card" href="./latest/">
+                <span>Latest brief</span>
+                <strong>Thu, Jun 25, 2026</strong>
+                <p>A June 23 official AWS collaboration update and a June 18 SEC filing keep the AI factory buildout narrative fresh just as the stock resets into a constructive pullback ahead of August 26 earnings.</p>
+              </a>
+      </header>
 
-    <section class="pick-list" aria-label="Top 10 picks">
-      <article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#1 NVDA</strong><span>NVIDIA Corporation</span></div>
-        <div class="meta">EQUITY · Technology · AI infrastructure quality leader</div>
-      </div>
-      <div class="score" aria-label="Score 80">80</div>
+      <main class="archive-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">History</p>
+            <h2>Previous briefs</h2>
+          </div>
+          <span class="small-label">1 total</span>
+        </div>
+        <section class="archive-list"><a class="archive-link" href="./2026-06-25/">
+        <div>
+          <span class="archive-date">2026-06-25</span>
+          <strong>Thu, Jun 25, 2026</strong>
+          <p>Top pick NVDA at 80. A June 23 official AWS collaboration update and a June 18 SEC filing keep the AI factory buildout narrative fresh just as the stock resets into a constructive pullback ahead of August 26 earnings.</p>
+        </div>
+        <span class="archive-open">Open</span>
+      </a></section>
+      </main>
     </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> A June 23 official AWS collaboration update and a June 18 SEC filing keep the AI factory buildout narrative fresh just as the stock resets into a constructive pullback ahead of August 26 earnings.</p>
-      <p class="subtle">NVIDIA remains the highest-quality direct AI infrastructure exposure in the slate, and the current 15.6% pullback from the recent high offers a cleaner long-term review window than the prior chase phase.</p>
-      <p><strong>Valuation:</strong> At roughly 30.3x TTM earnings and 2.5% free-cash-flow yield, NVIDIA is not optically cheap, but the pullback is large enough to reopen the setup for long-term research review.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">4 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>NVIDIA said on June 23, 2026 that it was working with AWS to bring AI to production at scale, reinforcing the AI factory demand backdrop across compute and infrastructure.</li><li>NVIDIA is scheduled to report earnings on 2026-08-26 for the quarter ending 2026-07-31.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Expectation and valuation risk: The business is elite, but the market still prices in continued AI capex strength and little room for execution slippage.</li><li>Valuation still assumes sustained AI demand leadership.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>August earnings checkpoint: NVIDIA next reports on 2026-08-26.</li><li>AI capex durability: Watch whether hyperscaler AI infrastructure demand stays broad after the June reset.</li><li>Change of view: A renewed melt-up without better price support, an August earnings miss, or signs that AI infrastructure demand is normalizing faster than expected would lower the priority.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 18/20</span><span class="pill">Why-now setup: 20/25</span><span class="pill">Momentum and timing: 8/10</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://nvidianews.nvidia.com/news/nvidia-and-aws-collaborate-to-bring-ai-to-production-at-scale" rel="noopener noreferrer" target="_blank">NVIDIA Newsroom · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><span class="evidence">Alpha Vantage · EVENT</span></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#2 VRT</strong><span>Vertiv Holdings Co</span></div>
-        <div class="meta">EQUITY · Industrials · AI power and cooling infrastructure enabler</div>
-      </div>
-      <div class="score" aria-label="Score 78">78</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> Vertiv unveiled a high-capacity AI rack platform on June 9 and completed the ThermoKey acquisition on June 12, keeping the AI densification and cooling thesis live while the stock sits 15.9% below its recent high.</p>
-      <p class="subtle">Vertiv offers leveraged exposure to AI data-center power and cooling demand, and the current pullback gives the theme a more acceptable long-term entry profile.</p>
-      <p><strong>Valuation:</strong> The multiple is demanding, but the valuation is being challenged by execution-linked AI infrastructure expansion rather than pure hope.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">5 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Vertiv said on June 9, 2026 that it launched a high-capacity rack platform for AI and high-density IT deployments, directly reinforcing the densification and cooling thesis.</li><li>Vertiv announced on June 12, 2026 that it completed the ThermoKey acquisition, expanding heat rejection and heat-exchange capabilities for AI data centers.</li><li>Vertiv Holdings Co is scheduled to report earnings on 2026-07-29 for the quarter ending 2026-06-30.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Valuation and execution risk: Vertiv still depends on sustaining high execution quality against an expensive market multiple.</li><li>The multiple remains high for an industrial business.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>July earnings checkpoint: Vertiv next reports on 2026-07-29.</li><li>ThermoKey integration: Monitor whether acquired heat-rejection assets accelerate AI data-center revenue conversion.</li><li>Change of view: A cooling-demand slowdown, ThermoKey integration stumble, or renewed multiple expansion without earnings support would weaken the setup.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 17/20</span><span class="pill">Why-now setup: 20/25</span><span class="pill">Momentum and timing: 8/10</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-unveils-high-capacity-rack-platform-for-ai-and-high-density-it-deployments/" rel="noopener noreferrer" target="_blank">Vertiv · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1674101/000162828026044317/vrt-20260617.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><a class="evidence" href="https://www.vertiv.com/en-us/" rel="noopener noreferrer" target="_blank">Vertiv · NEWS</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#3 LRCX</strong><span>Lam Research Corporation</span></div>
-        <div class="meta">EQUITY · Technology · Semiconductor equipment cycle beneficiary</div>
-      </div>
-      <div class="score" aria-label="Score 77">77</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> Lam reported strong March-quarter results on April 22 and highlighted panel-level packaging expansion on May 20, leaving the stock in a still-constructive pullback rather than a full momentum blowoff.</p>
-      <p class="subtle">Lam Research pairs strong semiconductor equipment quality with a still-constructive chart, making it a cleaner equipment-cycle entry than the most extended chip names.</p>
-      <p><strong>Valuation:</strong> The valuation is rich on trailing metrics, so the score leans on execution quality and cycle support more than classic cheapness.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">5 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Lam said on May 20, 2026 that it established a panel-level packaging center of excellence, reinforcing its exposure to packaging intensity and next-wave semiconductor manufacturing demand.</li><li>Lam reported March-quarter 2026 revenue growth and operating margin expansion on April 22, 2026, supporting the equipment-cycle resilience case.</li><li>Lam Research Corporation is scheduled to report earnings on 2026-07-29 for the quarter ending 2026-06-30.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Cycle and valuation risk: Semiconductor equipment remains cyclical and the stock still embeds a demanding execution bar.</li><li>Trailing valuation leaves less room for a demand pause.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>July earnings checkpoint: Lam next reports on 2026-07-29.</li><li>Packaging adoption: Watch whether panel-level packaging initiatives convert into broader equipment demand.</li><li>Change of view: If wafer-fab spending weakens materially, panel-level packaging demand disappoints, or the stock re-extends without better fundamentals, the rank should fall.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 18/20</span><span class="pill">Risk and resilience: 8/10</span><span class="pill">Source confidence: 4/5</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://newsroom.lamresearch.com/" rel="noopener noreferrer" target="_blank">Lam Research · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/707549/000070754926000020/lrcx-20260422.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><a class="evidence" href="https://newsroom.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29,-2026" rel="noopener noreferrer" target="_blank">Lam Research · NEWS</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#4 GOOG</strong><span>Alphabet Inc.</span></div>
-        <div class="meta">EQUITY · Communication Services · AI platform and cloud compounder</div>
-      </div>
-      <div class="score" aria-label="Score 76">76</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> Alphabet’s June 3 AI infrastructure capital raise and June 11 SEC filing keep AI compute expansion explicit while the shares remain 13.5% below their recent high.</p>
-      <p class="subtle">Alphabet offers a large-cap AI and cloud compounder on a cleaner pullback than most megacap peers, with valuation still more grounded than the top AI hardware names.</p>
-      <p><strong>Valuation:</strong> Around 26.1x TTM earnings with a 1.5% free-cash-flow yield is not deep value, but it is more reasonable than the pure AI hardware leaders given Alphabet’s scale and cash generation.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">3 providers</span>
-        <span class="pill">3 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Alphabet said on June 3, 2026 that it was raising capital to expand AI infrastructure and compute, directly linking the current investment cycle to future platform capacity.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>AI monetization and regulatory risk: Alphabet must convert AI infrastructure spending into durable economics while managing antitrust and competitive pressure.</li><li>Execution and regulatory headlines can still dominate sentiment.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>AI monetization proof: Watch for evidence that AI infrastructure expansion is translating into cloud and advertising productivity.</li><li>Capital intensity: Track whether infrastructure spending continues to rise faster than monetization.</li><li>Change of view: A weaker cloud/AI monetization signal, regulatory shock, or renewed momentum chase without incremental evidence would cut the score.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 18/20</span><span class="pill">Risk and resilience: 8/10</span><span class="pill">Source confidence: 4/5</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Upsize-and-Pricing-of-84-75-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure--and-Compute-2026-QzN3D9yMAj/default.aspx" rel="noopener noreferrer" target="_blank">Alphabet Investor Relations · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#5 ISRG</strong><span>Intuitive Surgical, Inc.</span></div>
-        <div class="meta">EQUITY · Healthcare · Robotic surgery innovation leader</div>
-      </div>
-      <div class="score" aria-label="Score 75">75</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> The stock is more than 32% below its recent high while Intuitive continues to roll out product and workflow innovations and heads into a July 16 earnings checkpoint.</p>
-      <p class="subtle">Intuitive remains one of the cleanest high-quality healthcare technology franchises, and the deep drawdown from the high creates a more compelling long-term review point.</p>
-      <p><strong>Valuation:</strong> The valuation is still premium, but the reset is large enough that quality now matters more than near-term multiple compression risk.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">4 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Intuitive said on May 21, 2026 that it was rolling out multiple platform, workflow, and security innovations across da Vinci 5, reinforcing the long-term product cycle.</li><li>Intuitive lists its Q2 2026 earnings conference call for July 16, 2026 at 1:30 PM PDT.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Procedure and premium multiple risk: The long-term franchise is strong, but a premium business can still derate if procedure growth or utilization slows.</li><li>The stock still carries a premium multiple for a healthcare device name.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>July earnings checkpoint: Intuitive hosts its Q2 2026 earnings call on 2026-07-16.</li><li>da Vinci 5 rollout: Watch whether innovation updates improve adoption and utilization without disrupting reliability.</li><li>Change of view: Procedure growth disappointment, security/product issues, or a July 16 miss would weaken the setup.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Source confidence: 5/5</span><span class="pill">Long-term quality: 18/20</span><span class="pill">Risk and resilience: 9/10</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://isrg.intuitive.com/news-releases/news-release-details/intuitive-announces-innovations-advance-quintuple-aim" rel="noopener noreferrer" target="_blank">Intuitive · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1035267/000103526726000042/isrg-20260528.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><span class="evidence">Intuitive Investor Relations · EVENT</span></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#6 PWR</strong><span>Quanta Services, Inc.</span></div>
-        <div class="meta">EQUITY · Industrials · Grid and electrification compounder</div>
-      </div>
-      <div class="score" aria-label="Score 74">74</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> A June investor presentation and May capital-return announcement keep management on offense while the stock sits in a constructive pullback tied to electrification and infrastructure demand.</p>
-      <p class="subtle">Quanta Services provides high-quality exposure to grid hardening, transmission, and electrification demand, and the current pullback is cleaner than the theme-heavy story suggests.</p>
-      <p><strong>Valuation:</strong> The trailing multiple is rich, so the score depends on execution durability and thematic demand rather than simple optically cheap valuation.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">5 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Quanta said on May 22, 2026 that it authorized a new $1 billion repurchase program and declared a quarterly dividend, underscoring confidence in cash generation while the market reassesses infrastructure demand.</li><li>Quanta posted a June 2026 investor presentation and remained active at June conferences, keeping management messaging current as the electrification theme evolves.</li><li>Quanta Services, Inc. is scheduled to report earnings on 2026-07-30 for the quarter ending 2026-06-30.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Execution and project-cycle risk: The thesis depends on continued project execution and sustained transmission/electrification capital spending.</li><li>Execution issues can hit the stock hard because the valuation is not forgiving.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>July earnings checkpoint: Quanta next reports on 2026-07-30.</li><li>Project conversion: Watch whether backlog and conference commentary continue to support power-infrastructure demand.</li><li>Change of view: A slowdown in utility, transmission, or industrial project conversion, or a balance-sheet deterioration, would lower the rating.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Source confidence: 5/5</span><span class="pill">Long-term quality: 16/20</span><span class="pill">Portfolio role and freshness: 8/10</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://investors.quantaservices.com/news-events/press-releases/detail/399/quanta-services-announces-quarterly-cash-dividend-and-new-1-billion-stock-repurchase-program" rel="noopener noreferrer" target="_blank">Quanta Services · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1050915/000119312526241989/d122565d8k.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><a class="evidence" href="https://investors.quantaservices.com/company-information/presentations" rel="noopener noreferrer" target="_blank">Quanta Services · EVENT</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#7 MCO</strong><span>Moody&#39;s Corporation</span></div>
-        <div class="meta">EQUITY · Financial Services · Data and ratings franchise ballast</div>
-      </div>
-      <div class="score" aria-label="Score 73">73</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> Moody&#39;s launched decision-grade AI skills on June 17, 2026, which gives the market a fresh narrative bridge between its data franchise and enterprise AI workflows.</p>
-      <p class="subtle">Moody&#39;s adds a resilient financial-data franchise with fresh AI workflow evidence and a less crowded setup than the mega-cap repeat list.</p>
-      <p><strong>Valuation:</strong> The stock is not cheap on earnings, but the cash-generation profile is better than the headline multiple suggests thanks to strong free-cash-flow yield.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">3 providers</span>
-        <span class="pill">3 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Moody&#39;s said on June 17, 2026 that it launched decision-grade AI skills across major AI platforms, extending its data franchise into enterprise AI workflows.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Multiple and cyclical issuance risk: The business is resilient, but valuation and capital-markets activity still matter for upside follow-through.</li><li>The stock can look optically expensive if issuance activity softens.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>AI workflow adoption: Watch whether management can convert decision-grade AI tools into durable incremental revenue.</li><li>Capital markets backdrop: Ratings and issuance activity still matter for maintaining the thesis momentum.</li><li>Change of view: If AI workflow monetization stalls, ratings activity slows sharply, or the stock rerates without improved revenue evidence, the priority should fall.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Risk and resilience: 10/10</span><span class="pill">Source confidence: 5/5</span><span class="pill">Long-term quality: 18/20</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://www.moodys.com/web/en/us/media-relations/press-releases/moodys-launches-decision-grade-ai-skills-for-major-ai-platforms.html" rel="noopener noreferrer" target="_blank">Moody&#39;s · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1059556/000162828026026383/mco-20260422.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#8 SMH</strong><span>SMH</span></div>
-        <div class="meta">ETF · Technology · Diversified semiconductor reset ETF</div>
-      </div>
-      <div class="score" aria-label="Score 72">72</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> VanEck&#39;s current fund materials still show a concentrated but diversified semiconductor basket, and the ETF remains 7.5% below its recent high after the latest AI hardware shakeout.</p>
-      <p class="subtle">SMH gives diversified semiconductor exposure after a meaningful sentiment reset, which is useful when single-name conviction is high but concentration risk is rising.</p>
-      <p><strong>Valuation:</strong> The fund is still a premium-growth vehicle, but broad exposure is preferable to forcing another crowded single-name semiconductor pick at the margin.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">5 providers</span>
-        <span class="pill">4 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>VanEck says SMH seeks to track the MVIS US Listed Semiconductor 25 Index, offering broad exposure across semiconductor production and equipment companies.</li><li>VanEck&#39;s current SMH fact sheet shows about $67.8 billion in net assets, 26 holdings, and a 0.35% expense ratio, keeping the fund liquid and institutionally relevant.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Sector concentration risk: SMH is diversified within semiconductors but still highly concentrated in one cyclical, sentiment-sensitive industry.</li><li>Semiconductor ETFs can still swing sharply with AI sentiment shifts.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>Semiconductor breadth: Watch whether AI capex support remains broad across memory, equipment, and logic names.</li><li>Concentration creep: Monitor whether top-holding concentration climbs further and reduces diversification benefits.</li><li>Change of view: If semiconductors resume a straight-line chase, or if AI capex breadth narrows to only the most extended names again, the ETF would be less compelling than selective single stocks.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 16/20</span><span class="pill">Portfolio role and freshness: 8/10</span><span class="pill">Source confidence: 4/5</span></div>
-      <div class="evidence-row"><a class="evidence" href="https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1748736000&amp;period2=1750896000&amp;interval=1d&amp;events=history&amp;includeAdjustedClose=true" rel="noopener noreferrer" target="_blank">Yahoo chart adjusted close · PRICE</a><a class="evidence" href="https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/?cken=true" rel="noopener noreferrer" target="_blank">VanEck · ETF_PROFILE</a><a class="evidence" href="https://www.vaneck.com/us/en/investments/semiconductor-etf-smh-fact-sheet.pdf?cken=true" rel="noopener noreferrer" target="_blank">VanEck · ETF_PROFILE</a><a class="evidence" href="https://www.alphavantage.co/documentation/" rel="noopener noreferrer" target="_blank">Alpha Vantage · ETF_PROFILE</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#9 ELV</strong><span>Elevance Health Inc.</span></div>
-        <div class="meta">EQUITY · Healthcare · Healthcare services value-tilted compounder</div>
-      </div>
-      <div class="score" aria-label="Score 71">71</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> The June 23 Health OS announcement adds a fresh operating-improvement angle while the shares remain about 9.5% below their recent high and still screen cheaply on cash flow.</p>
-      <p class="subtle">Elevance combines a materially cheaper valuation than most growth leaders with fresh operational evidence around Health OS and still-acceptable price timing.</p>
-      <p><strong>Valuation:</strong> At about 16.3x earnings and 7.7% free-cash-flow yield, Elevance is one of the clearer valuation dislocations in the selected list.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">3 providers</span>
-        <span class="pill">4 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>Elevance said on June 23, 2026 that Health OS was reducing denials and administrative friction, creating a fresh efficiency and workflow improvement narrative.</li><li>Elevance reported first-quarter 2026 results and raised full-year guidance on April 22, 2026, supporting the fundamental floor under the current pullback.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Policy and utilization risk: Managed-care stocks remain sensitive to reimbursement, utilization, and regulatory shifts even when valuation looks attractive.</li><li>Managed-care policy and utilization headlines can quickly change sentiment.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>Health OS conversion: Watch whether workflow and denial improvements translate into sustained financial leverage.</li><li>Medical cost trends: Track whether utilization and reimbursement stay favorable enough to protect the valuation thesis.</li><li>Change of view: Medical-cost pressure, policy shocks, or failure to convert Health OS improvements into sustained operating leverage would lower the rating.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Long-term quality: 16/20</span><span class="pill">Portfolio role and freshness: 8/10</span><span class="pill">Source confidence: 4/5</span></div>
-      <div class="evidence-row"><span class="evidence">FMP · FINANCIAL</span><a class="evidence" href="https://www.elevancehealth.com/newsroom/elevance-health-makes-clinical-review-faster-more-connected-with-health-os" rel="noopener noreferrer" target="_blank">Elevance Health · NEWS</a><a class="evidence" href="https://www.sec.gov/Archives/edgar/data/1156039/000115603926000049/elv-20260610.htm" rel="noopener noreferrer" target="_blank">SEC EDGAR · FILING</a><a class="evidence" href="https://www.elevancehealth.com/newsroom/elv-quarterly-earnings-q1-2026" rel="noopener noreferrer" target="_blank">Elevance Health · NEWS</a></div>
-    </div>
-  </article><article class="pick">
-    <div class="pick-header">
-      <div>
-        <div class="ticker"><strong>#10 XLU</strong><span>XLU</span></div>
-        <div class="meta">ETF · Utilities · Rate-sensitive defensive ballast ETF</div>
-      </div>
-      <div class="score" aria-label="Score 69">69</div>
-    </div>
-    <div class="pick-body">
-      <p><strong>Why now:</strong> June 25 BEA inflation data and the still-steady Fed posture keep utilities in play as a rate-sensitive ballast sleeve even though the chart is closer to neutral than washed out.</p>
-      <p class="subtle">XLU remains a useful defensive anchor when macro-rate uncertainty is high, though the current setup is more ballast than outright bargain.</p>
-      <p><strong>Valuation:</strong> The attraction is more about portfolio role and rate sensitivity than obvious valuation dislocation.</p>
-      <div class="pill-row">
-        <span class="pill">strong sources</span>
-        <span class="pill">4 providers</span>
-        <span class="pill">3 evidence refs</span>
-        <span class="pill">MEDIUM confidence</span>
-      </div>
-      <div class="columns">
-        <div class="mini"><h3>Catalysts</h3><ul><li>State Street says XLU seeks exposure to electric, water, multi-utility, renewable power, and gas utility industries through the Utilities Select Sector Index.</li><li>State Street&#39;s March 2026 XLU fact sheet lists the fund at a 0.08% expense ratio and defines the Utilities Select Sector Index industry mix.</li></ul></div>
-        <div class="mini"><h3>Risks</h3><ul><li>Rates and extension risk: Utilities can underperform if rates rise again, and XLU is not deeply discounted after its recent recovery.</li><li>The ETF is closer to neutral/extended than to a true valuation reset.</li></ul></div>
-        <div class="mini"><h3>Watch</h3><ul><li>Inflation and Fed path: Watch whether the June 25 BEA release and subsequent Fed signals continue to support utility ballast.</li><li>Extension risk: If XLU continues higher without a reset, it should become a lower-priority ballast rather than a fresh opportunity.</li><li>Change of view: If inflation re-accelerates, rates back up again, or the ETF extends further without a reset, XLU should lose priority versus fresher pullback names.</li></ul></div>
-      </div>
-      <div class="pill-row"><span class="pill">Portfolio role and freshness: 10/10</span><span class="pill">Risk and resilience: 8/10</span><span class="pill">Source confidence: 4/5</span></div>
-      <div class="evidence-row"><a class="evidence" href="https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1748736000&amp;period2=1750896000&amp;interval=1d&amp;events=history&amp;includeAdjustedClose=true" rel="noopener noreferrer" target="_blank">Yahoo chart adjusted close · PRICE</a><a class="evidence" href="https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu" rel="noopener noreferrer" target="_blank">State Street · ETF_PROFILE</a><a class="evidence" href="https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-xlu.pdf" rel="noopener noreferrer" target="_blank">State Street · ETF_PROFILE</a></div>
-    </div>
-  </article>
-    </section>
-
-    
-
-    <section class="source-panel">
-      <h2>Source Health</h2>
-      <div class="source-row"><span class="source-chip source-missing"><span>Alpaca</span><strong>missing</strong></span><span class="source-chip source-missing"><span>FRED</span><strong>missing</strong></span><span class="source-chip source-missing"><span>X Social</span><strong>missing</strong></span><span class="source-chip source-partial"><span>Alpha Vantage</span><strong>partial</strong></span><span class="source-chip source-partial"><span>Ipo Watch</span><strong>partial</strong></span><span class="source-chip source-partial"><span>Reddit Social</span><strong>partial</strong></span><span class="source-chip source-ready"><span>BLS</span><strong>ready</strong></span><span class="source-chip source-ready"><span>FINRA Short Interest</span><strong>ready</strong></span><span class="source-chip source-ready"><span>FMP</span><strong>ready</strong></span><span class="source-chip source-ready"><span>Issuer ETF Pages</span><strong>ready</strong></span><span class="source-chip source-ready"><span>Public Macro</span><strong>ready</strong></span><span class="source-chip source-ready"><span>Public Market Prices</span><strong>ready</strong></span><span class="source-chip source-ready"><span>SEC Edgar</span><strong>ready</strong></span><span class="source-chip source-ready"><span>SEC Insider</span><strong>ready</strong></span><span class="source-chip source-ready"><span>Treasury Fiscal Data</span><strong>ready</strong></span></div>
-    </section>
-
-    <footer>
-      Generated Jun 25, 2026, 04:17 PM GMT+3 from run morning-research-20260625T131735Z-opportunity-first-june-25-balance. This public page intentionally omits raw source artifacts, local paths, credentials, and portfolio actions.
-    </footer>
-  </main>
 </body>
 </html>
