@@ -1,0 +1,706 @@
+{
+  "version": 1,
+  "title": "MangoAdvice Daily Brief",
+  "runId": "morning-research-20260625T131735Z-opportunity-first-june-25-balance",
+  "runDate": "2026-06-25T00:00:00.000Z",
+  "runDateKey": "2026-06-25",
+  "runDateLabel": "Thu, Jun 25, 2026",
+  "generatedAt": "2026-06-25T13:17:35.951Z",
+  "generatedAtLabel": "Jun 25, 2026, 04:17 PM GMT+3",
+  "disclaimer": "Research summary only. Not financial advice, not a buy/sell instruction, and not an automatic trading signal.",
+  "sourceHealth": {
+    "ready": 9,
+    "partial": 3,
+    "missing": 3
+  },
+  "sourceCoverage": [
+    {
+      "key": "alpaca",
+      "status": "missing",
+      "notes": "Direct Alpaca credentials are not configured in the workspace, so no Alpaca snapshots were used."
+    },
+    {
+      "key": "fred",
+      "status": "missing",
+      "notes": "FRED_API_KEY is still missing, so the macro-rate context used Federal Reserve, BEA, and Treasury sources instead."
+    },
+    {
+      "key": "x_social",
+      "status": "missing",
+      "notes": "X API access is not configured, so X-based social rumor flow was skipped."
+    },
+    {
+      "key": "alpha_vantage",
+      "status": "partial",
+      "notes": "Alpha Vantage ETF profile and some earnings-calendar cross-checks were usable, but free-tier throttling limited broader same-run earnings coverage and blocked XLU profile detail."
+    },
+    {
+      "key": "ipo_watch",
+      "status": "partial",
+      "notes": "FMP IPO calendar, disclosure, and prospectus sources were checked, but no June 25 IPO candidate cleared the quality, source, and business-model threshold for inclusion."
+    },
+    {
+      "key": "reddit_social",
+      "status": "partial",
+      "notes": "Reddit RSS paths were checked in source preflight but returned repeated 429/403 responses; no rumor record met verification standards."
+    },
+    {
+      "key": "bls",
+      "status": "ready",
+      "notes": "BLS remained available for macro context, though today's slate leaned more heavily on the June 25 BEA release and June 17 Fed statement."
+    },
+    {
+      "key": "finra_short_interest",
+      "status": "ready",
+      "notes": "FINRA short-interest coverage was available, but no selected pick required short-pressure evidence to justify ranking."
+    },
+    {
+      "key": "fmp",
+      "status": "ready",
+      "notes": "FMP stable profile, ratios, key metrics, and price history were the main financial-data backbone for selected equities."
+    },
+    {
+      "key": "issuer_etf_pages",
+      "status": "ready",
+      "notes": "VanEck and State Street issuer materials were used for SMH and XLU mandate, fee, holdings, and positioning context."
+    },
+    {
+      "key": "public_macro",
+      "status": "ready",
+      "notes": "Federal Reserve and BEA official pages were used for the current rates and inflation backdrop."
+    },
+    {
+      "key": "public_market_prices",
+      "status": "ready",
+      "notes": "Yahoo adjusted-close history was used only as a fallback for ETF price timing after FMP rate limits interrupted ETF price pulls."
+    },
+    {
+      "key": "sec_edgar",
+      "status": "ready",
+      "notes": "SEC EDGAR archive URLs were used as the primary filing audit trail for each selected equity."
+    },
+    {
+      "key": "sec_insider",
+      "status": "ready",
+      "notes": "SEC insider/Form 4 access was checked but no selected pick depended on a fresh open-market insider cluster today."
+    },
+    {
+      "key": "treasury_fiscal_data",
+      "status": "ready",
+      "notes": "Treasury Fiscal Data rate context was used for utilities and rate-sensitive ballast framing."
+    }
+  ],
+  "warnings": [],
+  "picks": [
+    {
+      "rank": 1,
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "assetType": "EQUITY",
+      "sector": "Technology",
+      "portfolioRole": "AI infrastructure quality leader",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "thesisSummary": "NVIDIA remains the highest-quality direct AI infrastructure exposure in the slate, and the current 15.6% pullback from the recent high offers a cleaner long-term review window than the prior chase phase.",
+      "whyNow": "A June 23 official AWS collaboration update and a June 18 SEC filing keep the AI factory buildout narrative fresh just as the stock resets into a constructive pullback ahead of August 26 earnings.",
+      "valuationContext": "At roughly 30.3x TTM earnings and 2.5% free-cash-flow yield, NVIDIA is not optically cheap, but the pullback is large enough to reopen the setup for long-term research review.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 4,
+      "catalysts": [
+        "NVIDIA said on June 23, 2026 that it was working with AWS to bring AI to production at scale, reinforcing the AI factory demand backdrop across compute and infrastructure.",
+        "NVIDIA is scheduled to report earnings on 2026-08-26 for the quarter ending 2026-07-31."
+      ],
+      "risks": [
+        "Expectation and valuation risk: The business is elite, but the market still prices in continued AI capex strength and little room for execution slippage.",
+        "Valuation still assumes sustained AI demand leadership."
+      ],
+      "watchItems": [
+        "August earnings checkpoint: NVIDIA next reports on 2026-08-26.",
+        "AI capex durability: Watch whether hyperscaler AI infrastructure demand stays broad after the June reset.",
+        "Change of view: A renewed melt-up without better price support, an August earnings miss, or signs that AI infrastructure demand is normalizing faster than expected would lower the priority."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 18/20",
+        "Why-now setup: 20/25",
+        "Momentum and timing: 8/10"
+      ],
+      "evidence": [
+        {
+          "id": "ev-nvda-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "NVDA FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-nvda-catalyst-20260625",
+          "provider": "NVIDIA Newsroom",
+          "type": "NEWS",
+          "title": "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-aws-collaborate-to-bring-ai-to-production-at-scale"
+        },
+        {
+          "id": "ev-nvda-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "NVDA recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm"
+        },
+        {
+          "id": "ev-nvda-earnings-20260625",
+          "provider": "Alpha Vantage",
+          "type": "EVENT",
+          "title": "NVDA next earnings checkpoint"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "ticker": "VRT",
+      "name": "Vertiv Holdings Co",
+      "assetType": "EQUITY",
+      "sector": "Industrials",
+      "portfolioRole": "AI power and cooling infrastructure enabler",
+      "score": 78,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Vertiv offers leveraged exposure to AI data-center power and cooling demand, and the current pullback gives the theme a more acceptable long-term entry profile.",
+      "whyNow": "Vertiv unveiled a high-capacity AI rack platform on June 9 and completed the ThermoKey acquisition on June 12, keeping the AI densification and cooling thesis live while the stock sits 15.9% below its recent high.",
+      "valuationContext": "The multiple is demanding, but the valuation is being challenged by execution-linked AI infrastructure expansion rather than pure hope.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 5,
+      "catalysts": [
+        "Vertiv said on June 9, 2026 that it launched a high-capacity rack platform for AI and high-density IT deployments, directly reinforcing the densification and cooling thesis.",
+        "Vertiv announced on June 12, 2026 that it completed the ThermoKey acquisition, expanding heat rejection and heat-exchange capabilities for AI data centers.",
+        "Vertiv Holdings Co is scheduled to report earnings on 2026-07-29 for the quarter ending 2026-06-30."
+      ],
+      "risks": [
+        "Valuation and execution risk: Vertiv still depends on sustaining high execution quality against an expensive market multiple.",
+        "The multiple remains high for an industrial business."
+      ],
+      "watchItems": [
+        "July earnings checkpoint: Vertiv next reports on 2026-07-29.",
+        "ThermoKey integration: Monitor whether acquired heat-rejection assets accelerate AI data-center revenue conversion.",
+        "Change of view: A cooling-demand slowdown, ThermoKey integration stumble, or renewed multiple expansion without earnings support would weaken the setup."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 17/20",
+        "Why-now setup: 20/25",
+        "Momentum and timing: 8/10"
+      ],
+      "evidence": [
+        {
+          "id": "ev-vrt-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "VRT FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-vrt-catalyst-20260625",
+          "provider": "Vertiv",
+          "type": "NEWS",
+          "title": "Vertiv unveils high-capacity rack platform for AI and high-density IT deployments",
+          "url": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-unveils-high-capacity-rack-platform-for-ai-and-high-density-it-deployments/"
+        },
+        {
+          "id": "ev-vrt-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "VRT recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026044317/vrt-20260617.htm"
+        },
+        {
+          "id": "ev-vrt-secondary-20260625",
+          "provider": "Vertiv",
+          "type": "NEWS",
+          "title": "Vertiv completes acquisition of ThermoKey, expanding heat rejection portfolio for AI data centers",
+          "url": "https://www.vertiv.com/en-us/"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
+      "assetType": "EQUITY",
+      "sector": "Technology",
+      "portfolioRole": "Semiconductor equipment cycle beneficiary",
+      "score": 77,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Lam Research pairs strong semiconductor equipment quality with a still-constructive chart, making it a cleaner equipment-cycle entry than the most extended chip names.",
+      "whyNow": "Lam reported strong March-quarter results on April 22 and highlighted panel-level packaging expansion on May 20, leaving the stock in a still-constructive pullback rather than a full momentum blowoff.",
+      "valuationContext": "The valuation is rich on trailing metrics, so the score leans on execution quality and cycle support more than classic cheapness.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 5,
+      "catalysts": [
+        "Lam said on May 20, 2026 that it established a panel-level packaging center of excellence, reinforcing its exposure to packaging intensity and next-wave semiconductor manufacturing demand.",
+        "Lam reported March-quarter 2026 revenue growth and operating margin expansion on April 22, 2026, supporting the equipment-cycle resilience case.",
+        "Lam Research Corporation is scheduled to report earnings on 2026-07-29 for the quarter ending 2026-06-30."
+      ],
+      "risks": [
+        "Cycle and valuation risk: Semiconductor equipment remains cyclical and the stock still embeds a demanding execution bar.",
+        "Trailing valuation leaves less room for a demand pause."
+      ],
+      "watchItems": [
+        "July earnings checkpoint: Lam next reports on 2026-07-29.",
+        "Packaging adoption: Watch whether panel-level packaging initiatives convert into broader equipment demand.",
+        "Change of view: If wafer-fab spending weakens materially, panel-level packaging demand disappoints, or the stock re-extends without better fundamentals, the rank should fall."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 18/20",
+        "Risk and resilience: 8/10",
+        "Source confidence: 4/5"
+      ],
+      "evidence": [
+        {
+          "id": "ev-lrcx-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "LRCX FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-lrcx-catalyst-20260625",
+          "provider": "Lam Research",
+          "type": "NEWS",
+          "title": "Lam Research Establishes Panel-Level Packaging Center of Excellence in Salzburg, Austria",
+          "url": "https://newsroom.lamresearch.com/"
+        },
+        {
+          "id": "ev-lrcx-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "LRCX recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000020/lrcx-20260422.htm"
+        },
+        {
+          "id": "ev-lrcx-secondary-20260625",
+          "provider": "Lam Research",
+          "type": "NEWS",
+          "title": "Lam Research Corporation Reports Financial Results for the Quarter Ended March 29, 2026",
+          "url": "https://newsroom.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29,-2026"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "ticker": "GOOG",
+      "name": "Alphabet Inc.",
+      "assetType": "EQUITY",
+      "sector": "Communication Services",
+      "portfolioRole": "AI platform and cloud compounder",
+      "score": 76,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Alphabet offers a large-cap AI and cloud compounder on a cleaner pullback than most megacap peers, with valuation still more grounded than the top AI hardware names.",
+      "whyNow": "Alphabet’s June 3 AI infrastructure capital raise and June 11 SEC filing keep AI compute expansion explicit while the shares remain 13.5% below their recent high.",
+      "valuationContext": "Around 26.1x TTM earnings with a 1.5% free-cash-flow yield is not deep value, but it is more reasonable than the pure AI hardware leaders given Alphabet’s scale and cash generation.",
+      "sourcePosture": "strong",
+      "sourceCount": 3,
+      "evidenceCount": 3,
+      "catalysts": [
+        "Alphabet said on June 3, 2026 that it was raising capital to expand AI infrastructure and compute, directly linking the current investment cycle to future platform capacity."
+      ],
+      "risks": [
+        "AI monetization and regulatory risk: Alphabet must convert AI infrastructure spending into durable economics while managing antitrust and competitive pressure.",
+        "Execution and regulatory headlines can still dominate sentiment."
+      ],
+      "watchItems": [
+        "AI monetization proof: Watch for evidence that AI infrastructure expansion is translating into cloud and advertising productivity.",
+        "Capital intensity: Track whether infrastructure spending continues to rise faster than monetization.",
+        "Change of view: A weaker cloud/AI monetization signal, regulatory shock, or renewed momentum chase without incremental evidence would cut the score."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 18/20",
+        "Risk and resilience: 8/10",
+        "Source confidence: 4/5"
+      ],
+      "evidence": [
+        {
+          "id": "ev-goog-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "GOOG FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-goog-catalyst-20260625",
+          "provider": "Alphabet Investor Relations",
+          "type": "NEWS",
+          "title": "Alphabet Announces Upsize and Pricing of $84.75 Billion Equity Capital Raise to Expand AI Infrastructure and Compute",
+          "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Upsize-and-Pricing-of-84-75-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure--and-Compute-2026-QzN3D9yMAj/default.aspx"
+        },
+        {
+          "id": "ev-goog-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "GOOG recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "assetType": "EQUITY",
+      "sector": "Healthcare",
+      "portfolioRole": "Robotic surgery innovation leader",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Intuitive remains one of the cleanest high-quality healthcare technology franchises, and the deep drawdown from the high creates a more compelling long-term review point.",
+      "whyNow": "The stock is more than 32% below its recent high while Intuitive continues to roll out product and workflow innovations and heads into a July 16 earnings checkpoint.",
+      "valuationContext": "The valuation is still premium, but the reset is large enough that quality now matters more than near-term multiple compression risk.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 4,
+      "catalysts": [
+        "Intuitive said on May 21, 2026 that it was rolling out multiple platform, workflow, and security innovations across da Vinci 5, reinforcing the long-term product cycle.",
+        "Intuitive lists its Q2 2026 earnings conference call for July 16, 2026 at 1:30 PM PDT."
+      ],
+      "risks": [
+        "Procedure and premium multiple risk: The long-term franchise is strong, but a premium business can still derate if procedure growth or utilization slows.",
+        "The stock still carries a premium multiple for a healthcare device name."
+      ],
+      "watchItems": [
+        "July earnings checkpoint: Intuitive hosts its Q2 2026 earnings call on 2026-07-16.",
+        "da Vinci 5 rollout: Watch whether innovation updates improve adoption and utilization without disrupting reliability.",
+        "Change of view: Procedure growth disappointment, security/product issues, or a July 16 miss would weaken the setup."
+      ],
+      "scoreDrivers": [
+        "Source confidence: 5/5",
+        "Long-term quality: 18/20",
+        "Risk and resilience: 9/10"
+      ],
+      "evidence": [
+        {
+          "id": "ev-isrg-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "ISRG FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-isrg-catalyst-20260625",
+          "provider": "Intuitive",
+          "type": "NEWS",
+          "title": "Intuitive Announces Innovations to Advance Quintuple Aim",
+          "url": "https://isrg.intuitive.com/news-releases/news-release-details/intuitive-announces-innovations-advance-quintuple-aim"
+        },
+        {
+          "id": "ev-isrg-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "ISRG recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000042/isrg-20260528.htm"
+        },
+        {
+          "id": "ev-isrg-earnings-20260625",
+          "provider": "Intuitive Investor Relations",
+          "type": "EVENT",
+          "title": "ISRG next earnings checkpoint"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "ticker": "PWR",
+      "name": "Quanta Services, Inc.",
+      "assetType": "EQUITY",
+      "sector": "Industrials",
+      "portfolioRole": "Grid and electrification compounder",
+      "score": 74,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Quanta Services provides high-quality exposure to grid hardening, transmission, and electrification demand, and the current pullback is cleaner than the theme-heavy story suggests.",
+      "whyNow": "A June investor presentation and May capital-return announcement keep management on offense while the stock sits in a constructive pullback tied to electrification and infrastructure demand.",
+      "valuationContext": "The trailing multiple is rich, so the score depends on execution durability and thematic demand rather than simple optically cheap valuation.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 5,
+      "catalysts": [
+        "Quanta said on May 22, 2026 that it authorized a new $1 billion repurchase program and declared a quarterly dividend, underscoring confidence in cash generation while the market reassesses infrastructure demand.",
+        "Quanta posted a June 2026 investor presentation and remained active at June conferences, keeping management messaging current as the electrification theme evolves.",
+        "Quanta Services, Inc. is scheduled to report earnings on 2026-07-30 for the quarter ending 2026-06-30."
+      ],
+      "risks": [
+        "Execution and project-cycle risk: The thesis depends on continued project execution and sustained transmission/electrification capital spending.",
+        "Execution issues can hit the stock hard because the valuation is not forgiving."
+      ],
+      "watchItems": [
+        "July earnings checkpoint: Quanta next reports on 2026-07-30.",
+        "Project conversion: Watch whether backlog and conference commentary continue to support power-infrastructure demand.",
+        "Change of view: A slowdown in utility, transmission, or industrial project conversion, or a balance-sheet deterioration, would lower the rating."
+      ],
+      "scoreDrivers": [
+        "Source confidence: 5/5",
+        "Long-term quality: 16/20",
+        "Portfolio role and freshness: 8/10"
+      ],
+      "evidence": [
+        {
+          "id": "ev-pwr-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "PWR FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-pwr-catalyst-20260625",
+          "provider": "Quanta Services",
+          "type": "NEWS",
+          "title": "Quanta Services Announces Quarterly Cash Dividend and New $1 Billion Stock Repurchase Program",
+          "url": "https://investors.quantaservices.com/news-events/press-releases/detail/399/quanta-services-announces-quarterly-cash-dividend-and-new-1-billion-stock-repurchase-program"
+        },
+        {
+          "id": "ev-pwr-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "PWR recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526241989/d122565d8k.htm"
+        },
+        {
+          "id": "ev-pwr-secondary-20260625",
+          "provider": "Quanta Services",
+          "type": "EVENT",
+          "title": "June 2026 investor presentation",
+          "url": "https://investors.quantaservices.com/company-information/presentations"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "ticker": "MCO",
+      "name": "Moody's Corporation",
+      "assetType": "EQUITY",
+      "sector": "Financial Services",
+      "portfolioRole": "Data and ratings franchise ballast",
+      "score": 73,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Moody's adds a resilient financial-data franchise with fresh AI workflow evidence and a less crowded setup than the mega-cap repeat list.",
+      "whyNow": "Moody's launched decision-grade AI skills on June 17, 2026, which gives the market a fresh narrative bridge between its data franchise and enterprise AI workflows.",
+      "valuationContext": "The stock is not cheap on earnings, but the cash-generation profile is better than the headline multiple suggests thanks to strong free-cash-flow yield.",
+      "sourcePosture": "strong",
+      "sourceCount": 3,
+      "evidenceCount": 3,
+      "catalysts": [
+        "Moody's said on June 17, 2026 that it launched decision-grade AI skills across major AI platforms, extending its data franchise into enterprise AI workflows."
+      ],
+      "risks": [
+        "Multiple and cyclical issuance risk: The business is resilient, but valuation and capital-markets activity still matter for upside follow-through.",
+        "The stock can look optically expensive if issuance activity softens."
+      ],
+      "watchItems": [
+        "AI workflow adoption: Watch whether management can convert decision-grade AI tools into durable incremental revenue.",
+        "Capital markets backdrop: Ratings and issuance activity still matter for maintaining the thesis momentum.",
+        "Change of view: If AI workflow monetization stalls, ratings activity slows sharply, or the stock rerates without improved revenue evidence, the priority should fall."
+      ],
+      "scoreDrivers": [
+        "Risk and resilience: 10/10",
+        "Source confidence: 5/5",
+        "Long-term quality: 18/20"
+      ],
+      "evidence": [
+        {
+          "id": "ev-mco-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "MCO FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-mco-catalyst-20260625",
+          "provider": "Moody's",
+          "type": "NEWS",
+          "title": "Moody's launches decision-grade AI skills for major AI platforms",
+          "url": "https://www.moodys.com/web/en/us/media-relations/press-releases/moodys-launches-decision-grade-ai-skills-for-major-ai-platforms.html"
+        },
+        {
+          "id": "ev-mco-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "MCO recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026026383/mco-20260422.htm"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "ticker": "SMH",
+      "name": "SMH",
+      "assetType": "ETF",
+      "sector": "Technology",
+      "portfolioRole": "Diversified semiconductor reset ETF",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "thesisSummary": "SMH gives diversified semiconductor exposure after a meaningful sentiment reset, which is useful when single-name conviction is high but concentration risk is rising.",
+      "whyNow": "VanEck's current fund materials still show a concentrated but diversified semiconductor basket, and the ETF remains 7.5% below its recent high after the latest AI hardware shakeout.",
+      "valuationContext": "The fund is still a premium-growth vehicle, but broad exposure is preferable to forcing another crowded single-name semiconductor pick at the margin.",
+      "sourcePosture": "strong",
+      "sourceCount": 5,
+      "evidenceCount": 4,
+      "catalysts": [
+        "VanEck says SMH seeks to track the MVIS US Listed Semiconductor 25 Index, offering broad exposure across semiconductor production and equipment companies.",
+        "VanEck's current SMH fact sheet shows about $67.8 billion in net assets, 26 holdings, and a 0.35% expense ratio, keeping the fund liquid and institutionally relevant."
+      ],
+      "risks": [
+        "Sector concentration risk: SMH is diversified within semiconductors but still highly concentrated in one cyclical, sentiment-sensitive industry.",
+        "Semiconductor ETFs can still swing sharply with AI sentiment shifts."
+      ],
+      "watchItems": [
+        "Semiconductor breadth: Watch whether AI capex support remains broad across memory, equipment, and logic names.",
+        "Concentration creep: Monitor whether top-holding concentration climbs further and reduces diversification benefits.",
+        "Change of view: If semiconductors resume a straight-line chase, or if AI capex breadth narrows to only the most extended names again, the ETF would be less compelling than selective single stocks."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 16/20",
+        "Portfolio role and freshness: 8/10",
+        "Source confidence: 4/5"
+      ],
+      "evidence": [
+        {
+          "id": "ev-smh-price-20260625",
+          "provider": "Yahoo chart adjusted close",
+          "type": "PRICE",
+          "title": "SMH adjusted-close price snapshot",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/SMH?period1=1748736000&period2=1750896000&interval=1d&events=history&includeAdjustedClose=true"
+        },
+        {
+          "id": "ev-smh-issuer-20260625",
+          "provider": "VanEck",
+          "type": "ETF_PROFILE",
+          "title": "VanEck Semiconductor ETF overview",
+          "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/?cken=true"
+        },
+        {
+          "id": "ev-smh-factsheet-20260625",
+          "provider": "VanEck",
+          "type": "ETF_PROFILE",
+          "title": "SMH fact sheet",
+          "url": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh-fact-sheet.pdf?cken=true"
+        },
+        {
+          "id": "ev-smh-alpha-etf-20260625",
+          "provider": "Alpha Vantage",
+          "type": "ETF_PROFILE",
+          "title": "SMH ETF profile cross-check",
+          "url": "https://www.alphavantage.co/documentation/"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "ticker": "ELV",
+      "name": "Elevance Health Inc.",
+      "assetType": "EQUITY",
+      "sector": "Healthcare",
+      "portfolioRole": "Healthcare services value-tilted compounder",
+      "score": 71,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Elevance combines a materially cheaper valuation than most growth leaders with fresh operational evidence around Health OS and still-acceptable price timing.",
+      "whyNow": "The June 23 Health OS announcement adds a fresh operating-improvement angle while the shares remain about 9.5% below their recent high and still screen cheaply on cash flow.",
+      "valuationContext": "At about 16.3x earnings and 7.7% free-cash-flow yield, Elevance is one of the clearer valuation dislocations in the selected list.",
+      "sourcePosture": "strong",
+      "sourceCount": 3,
+      "evidenceCount": 4,
+      "catalysts": [
+        "Elevance said on June 23, 2026 that Health OS was reducing denials and administrative friction, creating a fresh efficiency and workflow improvement narrative.",
+        "Elevance reported first-quarter 2026 results and raised full-year guidance on April 22, 2026, supporting the fundamental floor under the current pullback."
+      ],
+      "risks": [
+        "Policy and utilization risk: Managed-care stocks remain sensitive to reimbursement, utilization, and regulatory shifts even when valuation looks attractive.",
+        "Managed-care policy and utilization headlines can quickly change sentiment."
+      ],
+      "watchItems": [
+        "Health OS conversion: Watch whether workflow and denial improvements translate into sustained financial leverage.",
+        "Medical cost trends: Track whether utilization and reimbursement stay favorable enough to protect the valuation thesis.",
+        "Change of view: Medical-cost pressure, policy shocks, or failure to convert Health OS improvements into sustained operating leverage would lower the rating."
+      ],
+      "scoreDrivers": [
+        "Long-term quality: 16/20",
+        "Portfolio role and freshness: 8/10",
+        "Source confidence: 4/5"
+      ],
+      "evidence": [
+        {
+          "id": "ev-elv-fmp-20260625",
+          "provider": "FMP",
+          "type": "FINANCIAL",
+          "title": "ELV FMP profile, ratios, and price snapshot"
+        },
+        {
+          "id": "ev-elv-catalyst-20260625",
+          "provider": "Elevance Health",
+          "type": "NEWS",
+          "title": "Elevance Health Makes Clinical Review Faster, More Connected with Health OS",
+          "url": "https://www.elevancehealth.com/newsroom/elevance-health-makes-clinical-review-faster-more-connected-with-health-os"
+        },
+        {
+          "id": "ev-elv-sec-20260625",
+          "provider": "SEC EDGAR",
+          "type": "FILING",
+          "title": "ELV recent SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000049/elv-20260610.htm"
+        },
+        {
+          "id": "ev-elv-secondary-20260625",
+          "provider": "Elevance Health",
+          "type": "NEWS",
+          "title": "Elevance Health Reports First Quarter 2026 Results; Raises Full-Year Guidance",
+          "url": "https://www.elevancehealth.com/newsroom/elv-quarterly-earnings-q1-2026"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "ticker": "XLU",
+      "name": "XLU",
+      "assetType": "ETF",
+      "sector": "Utilities",
+      "portfolioRole": "Rate-sensitive defensive ballast ETF",
+      "score": 69,
+      "confidence": "MEDIUM",
+      "thesisSummary": "XLU remains a useful defensive anchor when macro-rate uncertainty is high, though the current setup is more ballast than outright bargain.",
+      "whyNow": "June 25 BEA inflation data and the still-steady Fed posture keep utilities in play as a rate-sensitive ballast sleeve even though the chart is closer to neutral than washed out.",
+      "valuationContext": "The attraction is more about portfolio role and rate sensitivity than obvious valuation dislocation.",
+      "sourcePosture": "strong",
+      "sourceCount": 4,
+      "evidenceCount": 3,
+      "catalysts": [
+        "State Street says XLU seeks exposure to electric, water, multi-utility, renewable power, and gas utility industries through the Utilities Select Sector Index.",
+        "State Street's March 2026 XLU fact sheet lists the fund at a 0.08% expense ratio and defines the Utilities Select Sector Index industry mix."
+      ],
+      "risks": [
+        "Rates and extension risk: Utilities can underperform if rates rise again, and XLU is not deeply discounted after its recent recovery.",
+        "The ETF is closer to neutral/extended than to a true valuation reset."
+      ],
+      "watchItems": [
+        "Inflation and Fed path: Watch whether the June 25 BEA release and subsequent Fed signals continue to support utility ballast.",
+        "Extension risk: If XLU continues higher without a reset, it should become a lower-priority ballast rather than a fresh opportunity.",
+        "Change of view: If inflation re-accelerates, rates back up again, or the ETF extends further without a reset, XLU should lose priority versus fresher pullback names."
+      ],
+      "scoreDrivers": [
+        "Portfolio role and freshness: 10/10",
+        "Risk and resilience: 8/10",
+        "Source confidence: 4/5"
+      ],
+      "evidence": [
+        {
+          "id": "ev-xlu-price-20260625",
+          "provider": "Yahoo chart adjusted close",
+          "type": "PRICE",
+          "title": "XLU adjusted-close price snapshot",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1748736000&period2=1750896000&interval=1d&events=history&includeAdjustedClose=true"
+        },
+        {
+          "id": "ev-xlu-issuer-20260625",
+          "provider": "State Street",
+          "type": "ETF_PROFILE",
+          "title": "State Street Utilities Select Sector SPDR ETF overview",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu"
+        },
+        {
+          "id": "ev-xlu-factsheet-20260625",
+          "provider": "State Street",
+          "type": "ETF_PROFILE",
+          "title": "XLU fact sheet",
+          "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-xlu.pdf"
+        }
+      ]
+    }
+  ]
+}
