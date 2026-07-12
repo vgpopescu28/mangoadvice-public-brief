@@ -1,116 +1,29 @@
 {
   "version": 1,
   "title": "MangoAdvice Daily Brief",
-  "runId": "morning-research-20260710T202717Z-opportunity-first-july-10-v2",
+  "runId": "engine-v3-20260710-finalize01",
   "runDate": "2026-07-10T00:00:00.000Z",
   "runDateKey": "2026-07-10",
   "runDateLabel": "Fri, Jul 10, 2026",
-  "generatedAt": "2026-07-10T20:27:17.434Z",
-  "generatedAtLabel": "Jul 10, 2026, 11:27 PM GMT+3",
+  "generatedAt": "2026-07-10T12:45:00.000Z",
+  "generatedAtLabel": "Jul 10, 2026, 03:45 PM GMT+3",
   "disclaimer": "Research summary only. Not financial advice, not a buy/sell instruction, and not an automatic trading signal.",
   "sourceHealth": {
-    "ready": 13,
-    "partial": 2,
-    "missing": 3
+    "ready": 2,
+    "partial": 0,
+    "missing": 0
   },
   "sourceCoverage": [
     {
-      "key": "alpaca",
-      "status": "missing",
-      "notes": "Direct Alpaca credentials are not configured in the local runtime, so price timing used provider and public Yahoo fallbacks."
-    },
-    {
-      "key": "fred",
-      "status": "missing",
-      "notes": "FRED_API_KEY is not configured, so BLS and Treasury sources were used instead for macro regime context."
-    },
-    {
-      "key": "x_social",
-      "status": "missing",
-      "notes": "X API access is not configured."
-    },
-    {
-      "key": "gdelt",
-      "status": "partial",
-      "notes": "Today's GDELT probe failed, so it was treated as discovery-only rather than a scoring input."
-    },
-    {
-      "key": "reddit_social",
-      "status": "partial",
-      "notes": "Reddit public RSS remained sampled and throttled in places during preflight, leaving no policy-safe rumor records worth including in socialRumors."
-    },
-    {
-      "key": "alpha_vantage",
-      "status": "ready",
-      "notes": "Configured and used for earnings-calendar cross-checks, ETF context, and news support."
-    },
-    {
-      "key": "bls",
-      "status": "ready",
-      "notes": "Official BLS release pages were used for the July 2 payroll result and the July 14 CPI checkpoint."
-    },
-    {
-      "key": "cftc_cot",
-      "status": "ready",
-      "notes": "CFTC positioning data remained available for macro context, but it did not directly alter the final slate."
-    },
-    {
-      "key": "finra_short_interest",
-      "status": "ready",
-      "notes": "FINRA short-interest access remained available, but it was not a decisive ranking input for today's selected slate."
-    },
-    {
       "key": "fmp",
-      "status": "ready",
-      "notes": "Configured and usable for profiles, ratios, key metrics, prices, market news, and IPO checks."
+      "status": "ready"
     },
     {
-      "key": "ipo_watch",
-      "status": "ready",
-      "notes": "FMP IPO calendar, IPO disclosure, IPO prospectus, and Alpha Vantage IPO paths were checked in preflight; no U.S. listings met today's trust, size, and filing-quality thresholds."
-    },
-    {
-      "key": "issuer_etf_pages",
-      "status": "ready",
-      "notes": "ETF issuer context remained available during preflight, though today's selected slate resolved to single-name opportunities."
-    },
-    {
-      "key": "public_macro",
-      "status": "ready",
-      "notes": "Official BLS pages were used for dated macro and calendar context."
-    },
-    {
-      "key": "sec_13f",
-      "status": "ready",
-      "notes": "SEC 13F access remained available for lagged sponsorship context, though it was not a decisive driver today."
-    },
-    {
-      "key": "sec_edgar",
-      "status": "ready",
-      "notes": "Configured with a user-agent and used for filing audit trails in the selected picks."
-    },
-    {
-      "key": "sec_insider",
-      "status": "ready",
-      "notes": "SEC Form 4 access remained available, but no insider cluster displaced stronger theme and earnings lanes in the final ten."
-    },
-    {
-      "key": "treasury_fiscal_data",
-      "status": "ready",
-      "notes": "Treasury Fiscal Data remained available as the rates-context fallback while FRED stayed unavailable."
-    },
-    {
-      "key": "usaspending",
-      "status": "ready",
-      "notes": "USAspending remained available for strategic-theme checks, though it was not required as a headline evidence source today."
+      "key": "sec",
+      "status": "ready"
     }
   ],
-  "warnings": [
-    "FRED_API_KEY was missing; BLS and Treasury Fiscal Data were used instead for macro context.",
-    "Today's GDELT probe failed, so global news-flow remained discovery-only and did not alter scores.",
-    "Reddit public RSS remained partial during preflight, so socialRumors is intentionally empty.",
-    "FMP and Alpha Vantage IPO source paths were checked, but no U.S. IPO candidates met today's trust and quality thresholds."
-  ],
+  "warnings": [],
   "picks": [
     {
       "rank": 1,
@@ -118,627 +31,58 @@
       "name": "Broadcom Inc.",
       "assetType": "EQUITY",
       "sector": "Technology",
-      "portfolioRole": "Custom AI silicon and networking compounder",
-      "score": 84,
-      "confidence": "HIGH",
-      "thesisSummary": "Broadcom remains the highest-priority long-term review because the stock is still in a constructive pullback while custom AI silicon, networking, and private-cloud inference demand all carry recent official confirmation.",
-      "whyNow": "The June 24 Jalapeno processor launch with OpenAI followed Broadcom's June quarter AI revenue acceleration, and the July 1 setup still offers a cleaner entry window than the prior vertical phase.",
-      "valuationContext": "The multiple is still premium, but the current setup is better supported than many AI peers because Broadcom has explicit AI revenue, customer programs, and cash generation to audit.",
-      "sourcePosture": "strong",
-      "sourceCount": 5,
-      "evidenceCount": 6,
-      "catalysts": [
-        "Broadcom and OpenAI said on June 24 that they unveiled Jalapeno, an inference-oriented intelligence processor inside a multi-generation compute platform.",
-        "Broadcom reported fiscal Q2 AI semiconductor revenue of $10.8 billion and guided fiscal Q3 AI semiconductor revenue to $16.0 billion."
-      ],
-      "risks": [
-        "Customer concentration: A meaningful share of upside still depends on a concentrated set of hyperscaler and model-builder AI programs.",
-        "AI upside still depends on a relatively concentrated hyperscaler and model-builder customer set."
-      ],
-      "watchItems": [
-        "September earnings checkpoint: The next report needs to validate Broadcom's AI semiconductor revenue bridge into fiscal Q3.",
-        "Custom AI deployment breadth: Watch whether more production inference programs emerge beyond the current lead customers.",
-        "Change of view: A weakening AI revenue bridge, slower custom-accelerator deployments, or a failed September earnings follow-through would lower the priority."
-      ],
-      "scoreDrivers": [
-        "Long-term quality: 19/20",
-        "Why-now setup: 23/25",
-        "Portfolio role and freshness: 9/10"
-      ],
-      "evidence": [
-        {
-          "id": "ev-avgo-primary-20260702",
-          "provider": "Broadcom Investor Relations",
-          "type": "NEWS",
-          "title": "OpenAI and Broadcom Unveil LLM-Optimized Intelligence Processor",
-          "url": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor"
-        },
-        {
-          "id": "ev-avgo-secondary-20260702",
-          "provider": "Broadcom Investor Relations",
-          "type": "FINANCIAL",
-          "title": "Broadcom Inc. Announces Second Quarter Fiscal Year 2026 Financial Results",
-          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial"
-        },
-        {
-          "id": "ev-avgo-price-20260710",
-          "provider": "Yahoo chart adjusted close",
-          "type": "PRICE",
-          "title": "AVGO adjusted-close price snapshot",
-          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?interval=1d&events=history&includeAdjustedClose=true"
-        },
-        {
-          "id": "ev-avgo-financial-20260702",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "AVGO FMP quality and valuation snapshot"
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "ticker": "LRCX",
-      "name": "Lam Research Corporation",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "Semiconductor equipment cycle beneficiary",
-      "score": 83,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Lam Research pairs strong semiconductor equipment quality with a still-constructive chart, making it a cleaner equipment-cycle entry than the most extended chip names.",
-      "whyNow": "Lam reported strong March-quarter results on April 22 and highlighted panel-level packaging expansion on May 20, leaving the stock in a still-constructive pullback rather than a full momentum blowoff.",
-      "valuationContext": "The valuation is rich on trailing metrics, so the score leans on execution quality and cycle support more than classic cheapness.",
-      "sourcePosture": "strong",
-      "sourceCount": 4,
-      "evidenceCount": 5,
-      "catalysts": [
-        "Lam said on May 20, 2026 that it established a panel-level packaging center of excellence, reinforcing its exposure to packaging intensity and next-wave semiconductor manufacturing demand.",
-        "Lam reported March-quarter 2026 revenue growth and operating margin expansion on April 22, 2026, supporting the equipment-cycle resilience case."
-      ],
-      "risks": [
-        "Cycle and valuation risk: Semiconductor equipment remains cyclical and the stock still embeds a demanding execution bar.",
-        "Trailing valuation leaves less room for a demand pause."
-      ],
-      "watchItems": [
-        "July earnings checkpoint: Lam next reports on 2026-07-29.",
-        "Packaging adoption: Watch whether panel-level packaging initiatives convert into broader equipment demand.",
-        "Change of view: If wafer-fab spending weakens materially, panel-level packaging demand disappoints, or the stock re-extends without better fundamentals, the rank should fall."
-      ],
-      "scoreDrivers": [
-        "Why-now setup: 25/25",
-        "Long-term quality: 18/20",
-        "Risk and resilience: 8/10"
-      ],
-      "evidence": [
-        {
-          "id": "ev-lrcx-fmp-20260625",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "LRCX FMP profile, ratios, and price snapshot"
-        },
-        {
-          "id": "ev-lrcx-catalyst-20260625",
-          "provider": "Lam Research",
-          "type": "NEWS",
-          "title": "Lam Research Establishes Panel-Level Packaging Center of Excellence in Salzburg, Austria",
-          "url": "https://newsroom.lamresearch.com/"
-        },
-        {
-          "id": "ev-lrcx-sec-20260625",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "LRCX recent SEC filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000020/lrcx-20260422.htm"
-        },
-        {
-          "id": "ev-lrcx-secondary-20260625",
-          "provider": "Lam Research",
-          "type": "NEWS",
-          "title": "Lam Research Corporation Reports Financial Results for the Quarter Ended March 29, 2026",
-          "url": "https://newsroom.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29,-2026"
-        }
-      ]
-    },
-    {
-      "rank": 3,
-      "ticker": "MU",
-      "name": "Micron Technology, Inc.",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "Memory and storage AI cycle leader",
+      "portfolioRole": "Long-term ownership candidate under research review",
       "score": 82,
       "confidence": "HIGH",
-      "thesisSummary": "Micron moved into the top tier because July 1 brought a fresh strategic auto-memory agreement only a week after record fiscal Q3 results confirmed the AI memory upcycle.",
-      "whyNow": "Micron's July 1 strategic agreement with General Motors gave the stock a same-week catalyst on top of record June-quarter results, keeping the AI-memory and edge-compute demand thesis highly current.",
-      "valuationContext": "The name is cyclical, but the reset is still compelling because record results, cash generation, and strategic supply commitments reduce the usual visibility discount.",
+      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
+      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
+      "valuationContext": "Estimate: 2",
       "sourcePosture": "strong",
-      "sourceCount": 4,
+      "sourceCount": 2,
       "evidenceCount": 5,
       "catalysts": [
-        "Micron and General Motors said on July 1 that they signed a strategic customer agreement to secure long-term supply of advanced memory and storage products.",
-        "Micron reported record fiscal third-quarter results on June 24 with strong data-center revenue, HBM momentum, and free cash flow."
+        "Current-run estimate evidence for AVGO."
       ],
       "risks": [
-        "Memory-cycle volatility: Micron remains exposed to pricing and supply swings even when the current AI cycle is strong.",
-        "Micron remains structurally more cyclical than the software and platform leaders on today's list."
+        "The setup weakens if current operating evidence deteriorates."
       ],
       "watchItems": [
-        "July 21 dividend and customer-record date: Watch whether Micron's strategic customer agreement translates into more visible long-term design-win commentary by the next update cycle.",
-        "Next earnings reset: The next report needs to show that HBM, SSD, and data-center demand continue offsetting normal memory-cycle volatility.",
-        "Change of view: A reversal in HBM pricing, weaker data-center memory demand, or signs that record profitability was a short-lived peak would reduce the rank."
+        "Evidence refresh: Recheck the next current-run observation.",
+        "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Why-now setup: 23/25",
-        "Long-term quality: 18/20",
-        "Portfolio role and freshness: 8/10"
+        "Evidence confidence: 88/100",
+        "Ownership quality: 84/100",
+        "Research priority: 82/100"
       ],
       "evidence": [
         {
-          "id": "ev-mu-primary-20260702",
-          "provider": "Micron Investor Relations",
-          "type": "NEWS",
-          "title": "Micron and General Motors Sign Strategic Agreement to Secure Supply and Accelerate Innovation",
-          "url": "https://investors.micron.com/news-releases/news-release-details/micron-and-general-motors-sign-strategic-agreement-secure-supply"
-        },
-        {
-          "id": "ev-mu-secondary-20260702",
-          "provider": "Micron Investor Relations",
+          "id": "evidence:AVGO:fmp:fundamental:quality",
+          "provider": "fmp",
           "type": "FINANCIAL",
-          "title": "Micron Technology, Inc. Reports Record Results for the Third Quarter of Fiscal 2026",
-          "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter"
+          "title": "Fundamental evidence",
+          "url": "https://example.com/research/avgo-quality"
         },
         {
-          "id": "ev-mu-price-20260710",
-          "provider": "Yahoo chart adjusted close",
+          "id": "evidence:AVGO:sec:estimate:revision",
+          "provider": "sec",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/fixture.htm"
+        },
+        {
+          "id": "fact:AVGO:fmp:fundamental:quality",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Fundamental evidence",
+          "url": "https://example.com/research/avgo-quality"
+        },
+        {
+          "id": "fact:AVGO:fmp:price:entry",
+          "provider": "fmp",
           "type": "PRICE",
-          "title": "MU adjusted-close price snapshot",
-          "url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?interval=1d&events=history&includeAdjustedClose=true"
-        },
-        {
-          "id": "ev-mu-financial-20260702",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "MU FMP quality and valuation snapshot"
-        }
-      ]
-    },
-    {
-      "rank": 4,
-      "ticker": "VRT",
-      "name": "Vertiv Holdings Co",
-      "assetType": "EQUITY",
-      "sector": "Industrials",
-      "portfolioRole": "AI power and cooling infrastructure expansion",
-      "score": 81,
-      "confidence": "HIGH",
-      "thesisSummary": "Vertiv stays near the top because July 1 delivered fresh manufacturing-capacity evidence that directly supports the AI cooling and power-density thesis.",
-      "whyNow": "Vertiv's July 1 Malaysia facility announcement added same-day operating evidence for AI infrastructure demand while the stock still screened as a constructive pullback.",
-      "valuationContext": "The multiple is rich, but the current price remains more defensible while management keeps translating AI demand into physical capacity expansion.",
-      "sourcePosture": "strong",
-      "sourceCount": 5,
-      "evidenceCount": 5,
-      "catalysts": [
-        "Vertiv said on July 1 that it is expanding manufacturing capacity in Malaysia to support growing AI and digital-infrastructure demand across Asia.",
-        "VRT is scheduled to report on 2026-07-29 for the period ending 2026-06-30."
-      ],
-      "risks": [
-        "Execution and valuation risk: Vertiv still needs to execute well against a premium multiple in a fast-scaling AI infrastructure market.",
-        "A premium industrial multiple leaves limited room for execution slippage."
-      ],
-      "watchItems": [
-        "Late-July earnings checkpoint: The next report needs to confirm that manufacturing expansion is translating into delivery and backlog quality.",
-        "Regional supply-chain execution: Watch whether the new Malaysia facility improves supply resilience and deployment speed across Asia.",
-        "Change of view: A cooling-demand slowdown, manufacturing-ramp stumble, or renewed multiple expansion without earnings support would weaken the setup."
-      ],
-      "scoreDrivers": [
-        "Source confidence: 5/5",
-        "Why-now setup: 23/25",
-        "Long-term quality: 17/20"
-      ],
-      "evidence": [
-        {
-          "id": "ev-vrt-primary-20260702",
-          "provider": "Vertiv Investor Relations",
-          "type": "NEWS",
-          "title": "Vertiv Increases Manufacturing Capacity with New Facility in Malaysia",
-          "url": "https://investors.vertiv.com/news/news-details/2026/Vertiv-Increases-Manufacturing-Capacity-with-New-Facility-in-Malaysia-to-Support-Growing-Demand-for-AI-and-Digital-Infrastructure-Across-Asia/default.aspx"
-        },
-        {
-          "id": "ev-vrt-price-20260710",
-          "provider": "Yahoo chart adjusted close",
-          "type": "PRICE",
-          "title": "VRT adjusted-close price snapshot",
-          "url": "https://query1.finance.yahoo.com/v8/finance/chart/VRT?interval=1d&events=history&includeAdjustedClose=true"
-        },
-        {
-          "id": "ev-vrt-financial-20260702",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "VRT FMP quality and valuation snapshot"
-        },
-        {
-          "id": "ev-vrt-sec-20260702",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "VRT recent SEC filing audit trail",
-          "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026044317/vrt-20260617.htm"
-        }
-      ]
-    },
-    {
-      "rank": 5,
-      "ticker": "AMAT",
-      "name": "Applied Materials, Inc.",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "Semicap and packaging intensity beneficiary",
-      "score": 80,
-      "confidence": "HIGH",
-      "thesisSummary": "Applied Materials gives today's board a fresh semicap entry backed by direct June product evidence in DRAM and advanced packaging for AI chips.",
-      "whyNow": "Applied Materials announced new systems for DRAM and advanced packaging on June 25, directly tying its platform to AI memory and packaging intensity at a moment when the stock still screens well on quality and candidate-pool valuation.",
-      "valuationContext": "The candidate-pool valuation percentile remains attractive relative to its quality level even though the absolute free-cash-flow yield is not high.",
-      "sourcePosture": "strong",
-      "sourceCount": 3,
-      "evidenceCount": 4,
-      "catalysts": [
-        "Applied Materials said on June 25, 2026 that new systems were designed to accelerate DRAM and advanced packaging used in AI chips.",
-        "Applied Materials' quarterly results materials show recent record revenue, record earnings, and management commentary pointing to strong long-term visibility."
-      ],
-      "risks": [
-        "Cycle and execution risk: Semiconductor equipment demand remains cyclical even when AI-linked end markets are strong.",
-        "Fresh price strength could turn into an extended setup if estimates do not keep rising."
-      ],
-      "watchItems": [
-        "DRAM and packaging adoption: Track whether customers accelerate adoption of the new DRAM and advanced-packaging systems.",
-        "Next earnings re-underwrite: Use Applied's quarterly results page as the next checkpoint for demand and margin follow-through.",
-        "Change of view: If packaging demand slows, memory equipment intensity fades, or the stock extends too far without new estimate support, this should be demoted."
-      ],
-      "scoreDrivers": [
-        "Why-now setup: 23/25",
-        "Long-term quality: 18/20",
-        "Valuation: 16/20"
-      ],
-      "evidence": [
-        {
-          "id": "ev-amat-fmp-20260626",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "AMAT FMP financial snapshot"
-        },
-        {
-          "id": "ev-amat-primary-20260626",
-          "provider": "Applied Materials",
-          "type": "NEWS",
-          "title": "Applied Materials Introduces New Systems to Accelerate DRAM and Advanced Packaging for AI Chips",
-          "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-new-systems-accelerate-dram-and"
-        },
-        {
-          "id": "ev-amat-secondary-20260626",
-          "provider": "Applied Materials",
-          "type": "FINANCIAL",
-          "title": "Applied Materials quarterly results resources",
-          "url": "https://ir.appliedmaterials.com/financial-information/quarterly-results/"
-        },
-        {
-          "id": "ev-amat-sec-20260626",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "AMAT recent SEC 10-Q filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026037227/amat-20260426.htm"
-        }
-      ]
-    },
-    {
-      "rank": 6,
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "AI infrastructure quality leader",
-      "score": 79,
-      "confidence": "HIGH",
-      "thesisSummary": "NVIDIA remains the cleanest direct AI infrastructure leader, and the latest pullback still offers a better review window than the prior melt-up phase.",
-      "whyNow": "NVIDIA's June 23 AWS production-at-scale update and July 1 capital-partner buildout message keep the AI factory narrative fresh into the late-August earnings checkpoint.",
-      "valuationContext": "NVIDIA is not optically cheap, but the current pullback is materially more interesting than the prior chase phase.",
-      "sourcePosture": "strong",
-      "sourceCount": 6,
-      "evidenceCount": 6,
-      "catalysts": [
-        "NVIDIA said on July 1 that AI compute demand is shifting toward continuously operating AI factories and highlighted capital-partner support for the infrastructure buildout.",
-        "NVIDIA said on June 23 that it is working with AWS to bring AI to production at scale, reinforcing the AI factory deployment backdrop."
-      ],
-      "risks": [
-        "Expectation and valuation risk: The business is elite, but market expectations still leave little room for an execution slip.",
-        "Valuation still assumes sustained AI capex strength."
-      ],
-      "watchItems": [
-        "August earnings checkpoint: The next report needs to validate that the AI factory buildout is still broad and margin durable.",
-        "Production AI demand breadth: Watch whether the shift from experimentation to production inference broadens beyond the current hyperscaler leaders.",
-        "Change of view: A renewed melt-up without better price support, an earnings miss, or clear evidence that hyperscaler AI capex is normalizing would lower the priority."
-      ],
-      "scoreDrivers": [
-        "Source confidence: 5/5",
-        "Long-term quality: 19/20",
-        "Why-now setup: 20/25"
-      ],
-      "evidence": [
-        {
-          "id": "ev-nvda-primary-20260702",
-          "provider": "NVIDIA Blog",
-          "type": "NEWS",
-          "title": "NVIDIA Unlocks AI Compute at Scale, Inviting Capital Partners to Power the AI Infrastructure Buildout",
-          "url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"
-        },
-        {
-          "id": "ev-nvda-secondary-20260702",
-          "provider": "NVIDIA Newsroom",
-          "type": "NEWS",
-          "title": "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-and-aws-collaborate-to-bring-ai-to-production-at-scale"
-        },
-        {
-          "id": "ev-nvda-price-20260710",
-          "provider": "Yahoo chart adjusted close",
-          "type": "PRICE",
-          "title": "NVDA adjusted-close price snapshot",
-          "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&events=history&includeAdjustedClose=true"
-        },
-        {
-          "id": "ev-nvda-financial-20260702",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "NVDA FMP quality and valuation snapshot"
-        }
-      ]
-    },
-    {
-      "rank": 7,
-      "ticker": "TSM",
-      "name": "Taiwan Semiconductor Manufacturing Company Limited",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "Foundry quality leader for AI silicon demand",
-      "score": 78,
-      "confidence": "HIGH",
-      "thesisSummary": "TSMC is a direct foundry way to express sustained AI silicon demand, with elite profitability and a live July earnings checkpoint.",
-      "whyNow": "TSMC's current guidance points to second-quarter revenue of $39.0 billion to $40.2 billion with strong AI demand still driving capacity expansion, while the next earnings date on July 16 creates a near-term checkpoint.",
-      "valuationContext": "The valuation is still premium, but it is more grounded than the most crowded AI winners and sits near the favorable end of the current candidate-pool range.",
-      "sourcePosture": "strong",
-      "sourceCount": 3,
-      "evidenceCount": 4,
-      "catalysts": [
-        "TSMC's 2026 Q1 results page shows Q2 2026 revenue guidance of $39.0 billion to $40.2 billion and operating margin guidance of 56.5% to 58.5%.",
-        "TSMC lists its 2Q'26 earnings conference and conference call for July 16, 2026."
-      ],
-      "risks": [
-        "Geopolitical and capacity-concentration risk: TSMC remains exposed to geopolitical risk and the execution demands of capacity expansion across Taiwan and overseas fabs.",
-        "Geopolitical risk can outweigh fundamentals in the short run."
-      ],
-      "watchItems": [
-        "July earnings checkpoint: Review TSMC's July 16, 2026 earnings conference for AI demand, margins, and capacity commentary.",
-        "Capacity execution: Watch whether advanced-node and packaging capacity expansion stays aligned with AI customer demand.",
-        "Change of view: A weaker July 16 outlook, signs that AI-related utilization is softening, or geopolitical disruptions around capacity would reduce the priority."
-      ],
-      "scoreDrivers": [
-        "Long-term quality: 19/20",
-        "Momentum and timing: 8/10",
-        "Portfolio role and freshness: 8/10"
-      ],
-      "evidence": [
-        {
-          "id": "ev-tsm-fmp-20260626",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "TSM FMP financial snapshot"
-        },
-        {
-          "id": "ev-tsm-primary-20260626",
-          "provider": "TSMC Investor Relations",
-          "type": "FINANCIAL",
-          "title": "TSMC 2026 Q1 quarterly results and Q2 guidance",
-          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q1"
-        },
-        {
-          "id": "ev-tsm-secondary-20260626",
-          "provider": "TSMC Investor Relations",
-          "type": "EVENT",
-          "title": "TSMC 2Q'26 earnings conference",
-          "url": "https://investor.tsmc.com/english"
-        },
-        {
-          "id": "ev-tsm-sec-20260626",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "TSM recent SEC 6-K filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000377/tsm-monthend6kx20260625.htm"
-        }
-      ]
-    },
-    {
-      "rank": 8,
-      "ticker": "ANET",
-      "name": "Arista Networks, Inc.",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "AI networking infrastructure enabler",
-      "score": 77,
-      "confidence": "HIGH",
-      "thesisSummary": "Arista provides high-margin AI networking exposure with a direct product cycle tied to rack-scale AI fabrics.",
-      "whyNow": "Arista's June 9 launch of its 1.6-terabit 7060XE7 portfolio directly addresses rack-scale AI fabrics and follows a Q1 print that showed 35.1% year-over-year revenue growth and a strong Q2 guide.",
-      "valuationContext": "The free-cash-flow yield is not cheap in absolute terms, but the candidate-pool valuation percentile is still better than many elite AI-networking peers.",
-      "sourcePosture": "strong",
-      "sourceCount": 3,
-      "evidenceCount": 4,
-      "catalysts": [
-        "Arista announced on June 9, 2026 that its 7060XE7 Series was designed as the foundation for rack-scale AI infrastructure, targeting scale-up and scale-out AI fabrics.",
-        "Arista reported on May 5, 2026 that Q1 revenue rose 35.1% year over year to $2.709 billion and guided Q2 revenue to about $2.8 billion."
-      ],
-      "risks": [
-        "Customer concentration and AI-cycle risk: Arista still depends on sustained cloud and AI infrastructure spending from a concentrated hyperscaler customer base.",
-        "The stock can de-rate quickly if hyperscaler AI networking budgets pause."
-      ],
-      "watchItems": [
-        "AI fabric adoption: Monitor whether large-scale AI customers move from design wins to broader deployments of the new 7060XE7 portfolio.",
-        "Q2 guide follow-through: Track whether the Q2 revenue guide near $2.8 billion holds up when Arista reports next quarter.",
-        "Change of view: If AI fabric demand slows or gross-margin discipline weakens as systems scale, the idea should move down the list."
-      ],
-      "scoreDrivers": [
-        "Long-term quality: 19/20",
-        "Why-now setup: 20/25",
-        "Portfolio role and freshness: 8/10"
-      ],
-      "evidence": [
-        {
-          "id": "ev-anet-fmp-20260626",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "ANET FMP financial snapshot"
-        },
-        {
-          "id": "ev-anet-primary-20260626",
-          "provider": "Arista Networks",
-          "type": "NEWS",
-          "title": "Arista Introduces Next-Generation 1.6Terabit Portfolio for AI Fabrics",
-          "url": "https://www.arista.com/en/company/news/press-release/24102-pr-20260609"
-        },
-        {
-          "id": "ev-anet-secondary-20260626",
-          "provider": "Arista Networks",
-          "type": "FINANCIAL",
-          "title": "Arista Networks reports first quarter 2026 results",
-          "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-First-Quarter-2026-Financial-Results/default.aspx"
-        },
-        {
-          "id": "ev-anet-sec-20260626",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "ANET recent SEC 8-K filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000118/anet-20260529.htm"
-        }
-      ]
-    },
-    {
-      "rank": 9,
-      "ticker": "TXN",
-      "name": "Texas Instruments Incorporated",
-      "assetType": "EQUITY",
-      "sector": "Technology",
-      "portfolioRole": "Analog and embedded quality pullback",
-      "score": 76,
-      "confidence": "HIGH",
-      "thesisSummary": "Texas Instruments stands out as a steadier semiconductor pullback with a fresh July 1 earnings-call catalyst and a still-discounted valuation versus its own quality profile.",
-      "whyNow": "TI refreshed the setup on July 1 by scheduling its Q2 earnings call while the stock remained in a constructive pullback, giving the analog recovery and capital-discipline thesis a near-term audit date.",
-      "valuationContext": "The stock is not outright cheap on every metric, but it looks more reasonable than many semiconductor peers given the balance-sheet resilience and pullback structure.",
-      "sourcePosture": "strong",
-      "sourceCount": 5,
-      "evidenceCount": 6,
-      "catalysts": [
-        "TI said on July 1 that it will webcast its second-quarter 2026 earnings conference call on July 22.",
-        "TI said on June 2 that Julie Knecht will become CFO on August 1, 2026, while Rafael Lizardi retires after a transition period."
-      ],
-      "risks": [
-        "Industrial analog recovery risk: TI still needs end-market demand to keep stabilizing for the rerating to continue.",
-        "The rerating still depends on a real analog demand recovery rather than just sentiment improvement."
-      ],
-      "watchItems": [
-        "July 22 earnings call: The next earnings call needs to confirm demand stabilization and margin discipline.",
-        "Finance transition execution: Watch whether the CFO transition changes capital-allocation cadence or the messaging around the recovery.",
-        "Change of view: A weaker-than-expected analog recovery, acquisition-integration surprises, or a poor July earnings update would lower the rank."
-      ],
-      "scoreDrivers": [
-        "Long-term quality: 17/20",
-        "Portfolio role and freshness: 8/10",
-        "Risk and resilience: 8/10"
-      ],
-      "evidence": [
-        {
-          "id": "ev-txn-primary-20260702",
-          "provider": "Texas Instruments Investor Relations",
-          "type": "EVENT",
-          "title": "Texas Instruments to webcast Q2 2026 earnings conference call",
-          "url": "https://investor.ti.com/news-releases/news-release-details/texas-instruments-webcast-q2-2026-earnings-conference-call"
-        },
-        {
-          "id": "ev-txn-secondary-20260702",
-          "provider": "Texas Instruments Investor Relations",
-          "type": "NEWS",
-          "title": "Texas Instruments announces CFO transition",
-          "url": "https://investor.ti.com/news-releases/news-release-details/texas-instruments-announces-cfo-transition"
-        },
-        {
-          "id": "ev-txn-price-20260710",
-          "provider": "Yahoo chart adjusted close",
-          "type": "PRICE",
-          "title": "TXN adjusted-close price snapshot",
-          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TXN?interval=1d&events=history&includeAdjustedClose=true"
-        },
-        {
-          "id": "ev-txn-financial-20260702",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "TXN FMP quality and valuation snapshot"
-        }
-      ]
-    },
-    {
-      "rank": 10,
-      "ticker": "GOOG",
-      "name": "Alphabet Inc.",
-      "assetType": "EQUITY",
-      "sector": "Communication Services",
-      "portfolioRole": "AI platform and cloud compounder",
-      "score": 75,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Alphabet offers a large-cap AI and cloud compounder on a cleaner pullback than most megacap peers, with valuation still more grounded than the top AI hardware names.",
-      "whyNow": "Alphabet’s June 3 AI infrastructure capital raise and June 11 SEC filing keep AI compute expansion explicit while the shares remain 13.5% below their recent high.",
-      "valuationContext": "Around 26.1x TTM earnings with a 1.5% free-cash-flow yield is not deep value, but it is more reasonable than the pure AI hardware leaders given Alphabet’s scale and cash generation.",
-      "sourcePosture": "strong",
-      "sourceCount": 4,
-      "evidenceCount": 4,
-      "catalysts": [
-        "Alphabet said on June 3, 2026 that it was raising capital to expand AI infrastructure and compute, directly linking the current investment cycle to future platform capacity.",
-        "Alphabet is scheduled to report on 2026-07-22 for the period ending 2026-06-30."
-      ],
-      "risks": [
-        "AI monetization and regulatory risk: Alphabet must convert AI infrastructure spending into durable economics while managing antitrust and competitive pressure.",
-        "Execution and regulatory headlines can still dominate sentiment."
-      ],
-      "watchItems": [
-        "AI monetization proof: Watch for evidence that AI infrastructure expansion is translating into cloud and advertising productivity.",
-        "Capital intensity: Track whether infrastructure spending continues to rise faster than monetization.",
-        "Change of view: A weaker cloud/AI monetization signal, regulatory shock, or renewed momentum chase without incremental evidence would cut the score."
-      ],
-      "scoreDrivers": [
-        "Long-term quality: 18/20",
-        "Risk and resilience: 8/10",
-        "Source confidence: 4/5"
-      ],
-      "evidence": [
-        {
-          "id": "ev-goog-fmp-20260625",
-          "provider": "FMP",
-          "type": "FINANCIAL",
-          "title": "GOOG FMP profile, ratios, and price snapshot"
-        },
-        {
-          "id": "ev-goog-catalyst-20260625",
-          "provider": "Alphabet Investor Relations",
-          "type": "NEWS",
-          "title": "Alphabet Announces Upsize and Pricing of $84.75 Billion Equity Capital Raise to Expand AI Infrastructure and Compute",
-          "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Upsize-and-Pricing-of-84-75-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure--and-Compute-2026-QzN3D9yMAj/default.aspx"
-        },
-        {
-          "id": "ev-goog-sec-20260625",
-          "provider": "SEC EDGAR",
-          "type": "FILING",
-          "title": "GOOG recent SEC filing",
-          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm"
-        },
-        {
-          "id": "ev-goog-calendar-20260706",
-          "provider": "Alpha Vantage",
-          "type": "EVENT",
-          "title": "GOOG earnings calendar entry",
-          "url": "https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&symbol=GOOG"
+          "title": "Price evidence",
+          "url": "https://example.com/research/avgo-quality"
         }
       ]
     }
