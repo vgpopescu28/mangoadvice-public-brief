@@ -1,16 +1,16 @@
 {
   "version": 1,
   "title": "MangoAdvice Daily Brief",
-  "runId": "engine-v3-20260713-6d9e7eb4f9ae",
+  "runId": "engine-v3-20260713-fd589922f47f",
   "runDate": "2026-07-13T00:00:00.000Z",
   "runDateKey": "2026-07-13",
   "runDateLabel": "Mon, Jul 13, 2026",
-  "generatedAt": "2026-07-13T09:05:12.779Z",
-  "generatedAtLabel": "Jul 13, 2026, 12:05 PM GMT+3",
+  "generatedAt": "2026-07-13T18:15:00.000Z",
+  "generatedAtLabel": "Jul 13, 2026, 09:15 PM GMT+3",
   "disclaimer": "Research summary only. Not financial advice, not a buy/sell instruction, and not an automatic trading signal.",
   "sourceHealth": {
-    "ready": 5,
-    "partial": 8,
+    "ready": 6,
+    "partial": 7,
     "missing": 0
   },
   "sourceCoverage": [
@@ -24,10 +24,6 @@
     },
     {
       "key": "finra_short_interest",
-      "status": "partial"
-    },
-    {
-      "key": "gdelt",
       "status": "partial"
     },
     {
@@ -59,6 +55,10 @@
       "status": "ready"
     },
     {
+      "key": "gdelt",
+      "status": "ready"
+    },
+    {
       "key": "reddit",
       "status": "ready"
     },
@@ -76,14 +76,14 @@
       "assetType": "EQUITY",
       "sector": "Technology",
       "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 59,
+      "score": 66,
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 6.2004%",
+      "valuationContext": "Earnings Actual Eps 2026 02 26: 2.85 ratio; Earnings Actual Eps 2026 05 28: 2.99 ratio",
       "sourcePosture": "adequate",
       "sourceCount": 1,
-      "evidenceCount": 5,
+      "evidenceCount": 6,
       "catalysts": [],
       "risks": [
         "The setup weakens if current operating evidence deteriorates."
@@ -93,9 +93,9 @@
         "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Evidence confidence: 72/100",
         "Ownership quality: 71/100",
-        "Research priority: 59/100"
+        "Evidence confidence: 71/100",
+        "Research priority: 66/100"
       ],
       "evidence": [
         {
@@ -105,19 +105,19 @@
           "title": "Technical evidence"
         },
         {
-          "id": "fact:ADSK:fmp:free_cash_flow_yield_pct:2026-07-13:0e406cda3a2b179454bd",
+          "id": "fact:ADSK:fmp:estimate:97fc41a46b50b4b2ebd9dad4",
           "provider": "fmp",
           "type": "FINANCIAL",
-          "title": "Valuation evidence"
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:ADSK:fmp:estimate:c21b01f959462a2d0e7e96cd",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
         },
         {
           "id": "fact:ADSK:fmp:price:971c0ad8afd70d604ca90833",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        },
-        {
-          "id": "fact:ADSK:fmp:price:e3fc0f67bc751f845ba051b0",
           "provider": "fmp",
           "type": "PRICE",
           "title": "Price evidence"
@@ -126,19 +126,184 @@
     },
     {
       "rank": 2,
-      "ticker": "GFI",
-      "name": "Gold Fields Limited",
+      "ticker": "ARIS",
+      "name": "Aris Mining Corporation",
       "assetType": "EQUITY",
       "sector": "[redacted]",
       "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 59,
+      "score": 63,
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 10.2655%",
+      "valuationContext": "Earnings Actual Eps 2026 03 11: 0.46 ratio; Earnings Actual Eps 2026 05 06: 0.6 ratio",
       "sourcePosture": "adequate",
       "sourceCount": 1,
-      "evidenceCount": 5,
+      "evidenceCount": 6,
+      "catalysts": [],
+      "risks": [
+        "The setup weakens if current operating evidence deteriorates."
+      ],
+      "watchItems": [
+        "Evidence refresh: Recheck the next current-run observation.",
+        "Change of view: A failed investability gate or expired evidence would end the case."
+      ],
+      "scoreDrivers": [
+        "Evidence confidence: 71/100",
+        "Entry opportunity: 63/100",
+        "Research priority: 63/100"
+      ],
+      "evidence": [
+        {
+          "id": "evidence:ARIS:fmp:technical:cb66b2bb71af828594a1778d",
+          "provider": "fmp",
+          "type": "OTHER",
+          "title": "Technical evidence"
+        },
+        {
+          "id": "fact:ARIS:fmp:estimate:a1928fb6f9c7ffaa61e3322c",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:ARIS:fmp:estimate:e921fafbc47197b1ec9c0368",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:ARIS:fmp:price:bf4079dd8fe5ecae852c5be5",
+          "provider": "fmp",
+          "type": "PRICE",
+          "title": "Price evidence"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "ticker": "ORLA",
+      "name": "Orla Mining Ltd.",
+      "assetType": "EQUITY",
+      "sector": "[redacted]",
+      "portfolioRole": "Long-term ownership candidate under research review",
+      "score": 63,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
+      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
+      "valuationContext": "Earnings Actual Eps 2026 05 11: 0.39 ratio; Earnings Actual Eps 2026 03 19: 0.4 ratio",
+      "sourcePosture": "adequate",
+      "sourceCount": 1,
+      "evidenceCount": 6,
+      "catalysts": [],
+      "risks": [
+        "The setup weakens if current operating evidence deteriorates."
+      ],
+      "watchItems": [
+        "Evidence refresh: Recheck the next current-run observation.",
+        "Change of view: A failed investability gate or expired evidence would end the case."
+      ],
+      "scoreDrivers": [
+        "Evidence confidence: 71/100",
+        "Ownership quality: 66/100",
+        "Research priority: 63/100"
+      ],
+      "evidence": [
+        {
+          "id": "evidence:ORLA:fmp:technical:0a07e0bedcad5d49c1baf2cd",
+          "provider": "fmp",
+          "type": "OTHER",
+          "title": "Technical evidence"
+        },
+        {
+          "id": "fact:ORLA:fmp:estimate:25c35f88c8096177e7ef2c9b",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:ORLA:fmp:estimate:c5e581376f2af34460008123",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:ORLA:fmp:price:55d636426955617cc4d15f75",
+          "provider": "fmp",
+          "type": "PRICE",
+          "title": "Price evidence"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "ticker": "EXE",
+      "name": "Expand Energy Corporation",
+      "assetType": "EQUITY",
+      "sector": "Energy",
+      "portfolioRole": "Long-term ownership candidate under research review",
+      "score": 62,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
+      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
+      "valuationContext": "Earnings Actual Eps 2026 04 28: 3.83 ratio; Earnings Actual Eps 2026 02 17: 2 ratio",
+      "sourcePosture": "adequate",
+      "sourceCount": 1,
+      "evidenceCount": 6,
+      "catalysts": [],
+      "risks": [
+        "The setup weakens if current operating evidence deteriorates."
+      ],
+      "watchItems": [
+        "Evidence refresh: Recheck the next current-run observation.",
+        "Change of view: A failed investability gate or expired evidence would end the case."
+      ],
+      "scoreDrivers": [
+        "Evidence confidence: 71/100",
+        "Ownership quality: 67/100",
+        "Research priority: 62/100"
+      ],
+      "evidence": [
+        {
+          "id": "evidence:EXE:fmp:technical:c37751bed7cd6b53eda732ec",
+          "provider": "fmp",
+          "type": "OTHER",
+          "title": "Technical evidence"
+        },
+        {
+          "id": "fact:EXE:fmp:estimate:c05cb50086266f12b5524f6e",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:EXE:fmp:estimate:d02e4720c6917514cafbc1cb",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:EXE:fmp:price:00f14f11fac3488681d618ef",
+          "provider": "fmp",
+          "type": "PRICE",
+          "title": "Price evidence"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "ticker": "PAC",
+      "name": "Grupo Aeroportuario del Pacífico, S.A.B. de C.V.",
+      "assetType": "EQUITY",
+      "sector": "Industrials",
+      "portfolioRole": "Long-term ownership candidate under research review",
+      "score": 62,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
+      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
+      "valuationContext": "Earnings Actual Eps 2026 02 23: 1.97 ratio; Earnings Actual Eps 2026 04 20: 3.63 ratio",
+      "sourcePosture": "adequate",
+      "sourceCount": 1,
+      "evidenceCount": 6,
       "catalysts": [],
       "risks": [
         "The setup weakens if current operating evidence deteriorates."
@@ -150,6 +315,61 @@
       "scoreDrivers": [
         "Evidence confidence: 71/100",
         "Ownership quality: 70/100",
+        "Research priority: 62/100"
+      ],
+      "evidence": [
+        {
+          "id": "evidence:PAC:fmp:technical:5cc5478aeff1774c4ec79eae",
+          "provider": "fmp",
+          "type": "OTHER",
+          "title": "Technical evidence"
+        },
+        {
+          "id": "fact:PAC:fmp:estimate:d2497bb4b2ec81c7408fb122",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:PAC:fmp:estimate:ebcb1327b5e5a92e8172df15",
+          "provider": "fmp",
+          "type": "FINANCIAL",
+          "title": "Estimate evidence"
+        },
+        {
+          "id": "fact:PAC:fmp:price:36a2759e1dc0c69619582739",
+          "provider": "fmp",
+          "type": "PRICE",
+          "title": "Price evidence"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "ticker": "GFI",
+      "name": "Gold Fields Limited",
+      "assetType": "EQUITY",
+      "sector": "[redacted]",
+      "portfolioRole": "Long-term ownership candidate under research review",
+      "score": 59,
+      "confidence": "MEDIUM",
+      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
+      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
+      "valuationContext": "Free Cash Flow Yield Pct: 10.2847%",
+      "sourcePosture": "adequate",
+      "sourceCount": 1,
+      "evidenceCount": 5,
+      "catalysts": [],
+      "risks": [
+        "The setup weakens if current operating evidence deteriorates."
+      ],
+      "watchItems": [
+        "Evidence refresh: Recheck the next current-run observation.",
+        "Change of view: A failed investability gate or expired evidence would end the case."
+      ],
+      "scoreDrivers": [
+        "Ownership quality: 70/100",
+        "Evidence confidence: 70/100",
         "Research priority: 59/100"
       ],
       "evidence": [
@@ -160,7 +380,7 @@
           "title": "Technical evidence"
         },
         {
-          "id": "fact:GFI:fmp:free_cash_flow_yield_pct:2026-07-13:d56f90329fe8688a09cb",
+          "id": "fact:GFI:fmp:free_cash_flow_yield_pct:2026-07-13:e1175381c84441a3bbd4",
           "provider": "fmp",
           "type": "FINANCIAL",
           "title": "Valuation evidence"
@@ -180,7 +400,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 7,
       "ticker": "HRB",
       "name": "H&R Block, Inc.",
       "assetType": "EQUITY",
@@ -190,7 +410,7 @@
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 15.1618%",
+      "valuationContext": "Free Cash Flow Yield Pct: 14.3929%",
       "sourcePosture": "adequate",
       "sourceCount": 1,
       "evidenceCount": 5,
@@ -203,8 +423,8 @@
         "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Evidence confidence: 72/100",
         "Ownership quality: 71/100",
+        "Evidence confidence: 70/100",
         "Research priority: 59/100"
       ],
       "evidence": [
@@ -215,7 +435,7 @@
           "title": "Technical evidence"
         },
         {
-          "id": "fact:HRB:fmp:free_cash_flow_yield_pct:2026-07-13:278d2c8f4768ba3d41bc",
+          "id": "fact:HRB:fmp:free_cash_flow_yield_pct:2026-07-13:ae25da07c1e4869d8bab",
           "provider": "fmp",
           "type": "FINANCIAL",
           "title": "Valuation evidence"
@@ -235,7 +455,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 8,
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "assetType": "EQUITY",
@@ -245,7 +465,7 @@
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 3.8499%",
+      "valuationContext": "Free Cash Flow Yield Pct: 3.787%",
       "sourcePosture": "adequate",
       "sourceCount": 1,
       "evidenceCount": 5,
@@ -258,8 +478,8 @@
         "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Evidence confidence: 72/100",
-        "Ownership quality: 70/100",
+        "Ownership quality: 71/100",
+        "Evidence confidence: 70/100",
         "Research priority: 59/100"
       ],
       "evidence": [
@@ -270,7 +490,7 @@
           "title": "Technical evidence"
         },
         {
-          "id": "fact:NFLX:fmp:free_cash_flow_yield_pct:2026-07-13:4222fdde38ef0a3b7e24",
+          "id": "fact:NFLX:fmp:free_cash_flow_yield_pct:2026-07-13:6f577d80858cb030ba8c",
           "provider": "fmp",
           "type": "FINANCIAL",
           "title": "Valuation evidence"
@@ -290,62 +510,7 @@
       ]
     },
     {
-      "rank": 5,
-      "ticker": "EXE",
-      "name": "Expand Energy Corporation",
-      "assetType": "EQUITY",
-      "sector": "Energy",
-      "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 58,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
-      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 13.7213%",
-      "sourcePosture": "adequate",
-      "sourceCount": 1,
-      "evidenceCount": 5,
-      "catalysts": [],
-      "risks": [
-        "The setup weakens if current operating evidence deteriorates."
-      ],
-      "watchItems": [
-        "Evidence refresh: Recheck the next current-run observation.",
-        "Change of view: A failed investability gate or expired evidence would end the case."
-      ],
-      "scoreDrivers": [
-        "Evidence confidence: 72/100",
-        "Ownership quality: 67/100",
-        "Research priority: 58/100"
-      ],
-      "evidence": [
-        {
-          "id": "evidence:EXE:fmp:technical:c37751bed7cd6b53eda732ec",
-          "provider": "fmp",
-          "type": "OTHER",
-          "title": "Technical evidence"
-        },
-        {
-          "id": "fact:EXE:fmp:free_cash_flow_yield_pct:2026-07-13:31662742721d0580f749",
-          "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
-        },
-        {
-          "id": "fact:EXE:fmp:price:00f14f11fac3488681d618ef",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        },
-        {
-          "id": "fact:EXE:fmp:price:767ab0854a0d72536b3be702",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        }
-      ]
-    },
-    {
-      "rank": 6,
+      "rank": 9,
       "ticker": "B",
       "name": "Barrick Mining Corporation",
       "assetType": "EQUITY",
@@ -355,7 +520,7 @@
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 8.5867%",
+      "valuationContext": "Free Cash Flow Yield Pct: 8.8265%",
       "sourcePosture": "adequate",
       "sourceCount": 1,
       "evidenceCount": 5,
@@ -368,7 +533,7 @@
         "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Evidence confidence: 72/100",
+        "Evidence confidence: 70/100",
         "Ownership quality: 66/100",
         "Research priority: 57/100"
       ],
@@ -380,7 +545,7 @@
           "title": "Technical evidence"
         },
         {
-          "id": "fact:B:fmp:free_cash_flow_yield_pct:2026-07-13:9ec29d76e7a6645b37ad",
+          "id": "fact:B:fmp:free_cash_flow_yield_pct:2026-07-13:7f52efbed1394470bf20",
           "provider": "fmp",
           "type": "FINANCIAL",
           "title": "Valuation evidence"
@@ -400,185 +565,20 @@
       ]
     },
     {
-      "rank": 7,
-      "ticker": "ORLA",
-      "name": "Orla Mining Ltd.",
-      "assetType": "EQUITY",
-      "sector": "[redacted]",
-      "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 57,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
-      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 9.3973%",
-      "sourcePosture": "adequate",
-      "sourceCount": 1,
-      "evidenceCount": 5,
-      "catalysts": [],
-      "risks": [
-        "The setup weakens if current operating evidence deteriorates."
-      ],
-      "watchItems": [
-        "Evidence refresh: Recheck the next current-run observation.",
-        "Change of view: A failed investability gate or expired evidence would end the case."
-      ],
-      "scoreDrivers": [
-        "Evidence confidence: 72/100",
-        "Ownership quality: 66/100",
-        "Research priority: 57/100"
-      ],
-      "evidence": [
-        {
-          "id": "evidence:ORLA:fmp:technical:0a07e0bedcad5d49c1baf2cd",
-          "provider": "fmp",
-          "type": "OTHER",
-          "title": "Technical evidence"
-        },
-        {
-          "id": "fact:ORLA:fmp:free_cash_flow_yield_pct:2026-07-13:314f39a41e1ef5d985df",
-          "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
-        },
-        {
-          "id": "fact:ORLA:fmp:price:55d636426955617cc4d15f75",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        },
-        {
-          "id": "fact:ORLA:fmp:price:9c9ae86322e32c6e07609533",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        }
-      ]
-    },
-    {
-      "rank": 8,
-      "ticker": "LPG",
-      "name": "Dorian LPG Ltd.",
-      "assetType": "EQUITY",
-      "sector": "Energy",
-      "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 56,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
-      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Enterprise Value To Ebitda: 7.1512 ratio; Free Cash Flow Yield Pct: 11.1339%; Price To Earnings: 8.8022 ratio",
-      "sourcePosture": "adequate",
-      "sourceCount": 1,
-      "evidenceCount": 6,
-      "catalysts": [],
-      "risks": [
-        "The setup weakens if current operating evidence deteriorates."
-      ],
-      "watchItems": [
-        "Evidence refresh: Recheck the next current-run observation.",
-        "Change of view: A failed investability gate or expired evidence would end the case."
-      ],
-      "scoreDrivers": [
-        "Evidence confidence: 72/100",
-        "Ownership quality: 63/100",
-        "Research priority: 56/100"
-      ],
-      "evidence": [
-        {
-          "id": "evidence:LPG:fmp:technical:e171450e3c11b84d50a09bc6",
-          "provider": "fmp",
-          "type": "OTHER",
-          "title": "Technical evidence"
-        },
-        {
-          "id": "fact:LPG:fmp:enterprise_value_to_ebitda:2026-07-13:a366dfdb5532fc530b72",
-          "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
-        },
-        {
-          "id": "fact:LPG:fmp:free_cash_flow_yield_pct:2026-07-13:b34c90f4426c4e1ab929",
-          "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
-        },
-        {
-          "id": "fact:LPG:fmp:price:6c6cea6f698dc1a10861b193",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        }
-      ]
-    },
-    {
-      "rank": 9,
-      "ticker": "ARIS",
-      "name": "Aris Mining Corporation",
-      "assetType": "EQUITY",
-      "sector": "[redacted]",
-      "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 55,
-      "confidence": "MEDIUM",
-      "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
-      "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Free Cash Flow Yield Pct: 6.4729%",
-      "sourcePosture": "adequate",
-      "sourceCount": 1,
-      "evidenceCount": 5,
-      "catalysts": [],
-      "risks": [
-        "The setup weakens if current operating evidence deteriorates."
-      ],
-      "watchItems": [
-        "Evidence refresh: Recheck the next current-run observation.",
-        "Change of view: A failed investability gate or expired evidence would end the case."
-      ],
-      "scoreDrivers": [
-        "Evidence confidence: 72/100",
-        "Ownership quality: 61/100",
-        "Research priority: 55/100"
-      ],
-      "evidence": [
-        {
-          "id": "evidence:ARIS:fmp:technical:cb66b2bb71af828594a1778d",
-          "provider": "fmp",
-          "type": "OTHER",
-          "title": "Technical evidence"
-        },
-        {
-          "id": "fact:ARIS:fmp:free_cash_flow_yield_pct:2026-07-13:2c9cd01d628d6655b98a",
-          "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
-        },
-        {
-          "id": "fact:ARIS:fmp:price:bf4079dd8fe5ecae852c5be5",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        },
-        {
-          "id": "fact:ARIS:fmp:price:e56661bf0b8c70fcd6ce958e",
-          "provider": "fmp",
-          "type": "PRICE",
-          "title": "Price evidence"
-        }
-      ]
-    },
-    {
       "rank": 10,
-      "ticker": "MO",
-      "name": "Altria Group, Inc.",
+      "ticker": "LRCX",
+      "name": "Lam Research Corporation",
       "assetType": "EQUITY",
-      "sector": "Consumer Defensive",
+      "sector": "Technology",
       "portfolioRole": "Long-term ownership candidate under research review",
-      "score": 55,
+      "score": 52,
       "confidence": "MEDIUM",
       "thesisSummary": "Durable ownership quality is paired with a current source-backed entry setup.",
       "whyNow": "Current-run evidence supports reviewing the setup at this cutoff.",
-      "valuationContext": "Enterprise Value To Ebitda: 11.8849 ratio; Free Cash Flow Yield Pct: 7.1949%; Price To Earnings: 15.0146 ratio",
+      "valuationContext": "Free Cash Flow Yield Pct: 1.5645%",
       "sourcePosture": "adequate",
       "sourceCount": 1,
-      "evidenceCount": 6,
+      "evidenceCount": 5,
       "catalysts": [],
       "risks": [
         "The setup weakens if current operating evidence deteriorates."
@@ -588,31 +588,31 @@
         "Change of view: A failed investability gate or expired evidence would end the case."
       ],
       "scoreDrivers": [
-        "Ownership quality: 69/100",
-        "Evidence confidence: 69/100",
-        "Research priority: 55/100"
+        "Ownership quality: 72/100",
+        "Evidence confidence: 70/100",
+        "Research priority: 52/100"
       ],
       "evidence": [
         {
-          "id": "evidence:MO:fmp:technical:dee981d0ff934816b0880b51",
+          "id": "evidence:LRCX:fmp:technical:f316a90f9f06b2845b8e5413",
           "provider": "fmp",
           "type": "OTHER",
           "title": "Technical evidence"
         },
         {
-          "id": "fact:MO:fmp:enterprise_value_to_ebitda:2026-07-13:6e62bf71f8ee2dbe2dc8",
+          "id": "fact:LRCX:fmp:free_cash_flow_yield_pct:2026-07-13:bb408b5e19bcb15f7ef4",
           "provider": "fmp",
           "type": "FINANCIAL",
           "title": "Valuation evidence"
         },
         {
-          "id": "fact:MO:fmp:free_cash_flow_yield_pct:2026-07-13:d6efd7d5d748ce84638d",
+          "id": "fact:LRCX:fmp:price:2abd45dcb0118079fb388328",
           "provider": "fmp",
-          "type": "FINANCIAL",
-          "title": "Valuation evidence"
+          "type": "PRICE",
+          "title": "Price evidence"
         },
         {
-          "id": "fact:MO:fmp:price:931eb617b3752d5a296a78cd",
+          "id": "fact:LRCX:fmp:price:d6c27c7e3aaf9bd7bb29de88",
           "provider": "fmp",
           "type": "PRICE",
           "title": "Price evidence"
