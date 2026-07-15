@@ -72,11 +72,11 @@
       place-items: center;
       width: 32px;
       height: 32px;
-      border: 1.5px solid var(--line-strong);
-      border-radius: 9px;
-      background: var(--mango);
-      color: #151713;
-      font-weight: 950;
+    }
+    .brand-mark svg {
+      display: block;
+      width: 32px;
+      height: 32px;
     }
     .brand-link em {
       color: var(--quiet);
@@ -425,6 +425,36 @@
       font-size: 0.98rem;
       font-weight: 650;
     }
+    .memo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      margin: 10px 0 12px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .memo-block {
+      min-width: 0;
+      padding: 12px 14px 12px 0;
+    }
+    .memo-now {
+      border-left: 4px solid var(--mango);
+      padding-left: 14px;
+    }
+    .memo-block h4 {
+      margin-bottom: 6px;
+      color: var(--quiet);
+      font-size: 0.7rem;
+      font-weight: 950;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .memo-block p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 0.91rem;
+      font-weight: 680;
+    }
     .context-line {
       margin-bottom: 10px;
       text-transform: none;
@@ -454,6 +484,21 @@
       padding-left: 18px;
       color: var(--muted);
       font-size: 0.84rem;
+    }
+    .source-limitation {
+      margin: 10px 0;
+      border-left: 4px solid var(--mango);
+      background: var(--surface-soft);
+      padding: 9px 11px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .source-role-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 8px;
     }
     .pill-row, .evidence-row, .source-row {
       display: flex;
@@ -558,6 +603,14 @@
       .research-grid {
         grid-template-columns: 1fr;
       }
+      .memo-grid {
+        grid-template-columns: 1fr;
+      }
+      .memo-now {
+        border-top: 1px solid var(--line);
+        border-left: 0;
+        box-shadow: inset 4px 0 0 var(--mango);
+      }
     }
     @media (max-width: 620px) {
       .site-shell {
@@ -600,7 +653,16 @@
 <body class="archive-page">
   <div class="site-shell">
       <nav class="top-nav" aria-label="Public brief navigation">
-    <a class="brand-link" href="./"><span class="brand-mark">M</span><span>MangoAdvice</span><em>Public Brief</em></a>
+    <a class="brand-link" href="./"><span class="brand-mark"><svg viewBox="0 0 96 96" role="img" aria-label="MangoAdvice logo mark">
+    <rect width="86" height="86" x="5" y="5" fill="#ffb21f" rx="25" />
+    <rect width="70" height="70" x="13" y="13" fill="#ffe978" opacity=".72" rx="21" />
+    <rect width="86" height="86" x="5" y="5" fill="none" stroke="#102039" stroke-opacity=".16" stroke-width="3" rx="25" />
+    <path fill="#ff8f1f" stroke="#102039" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M29.2 59.8c-6.8-8.2-5.4-20.7 3.2-27.9 9.8-8.1 25.1-6.4 32.3 3.7 7.5 10.5 3.1 25.7-8.8 31.1-9.2 4.1-20 .7-26.7-6.9Z" />
+    <path fill="#32d36b" stroke="#102039" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M58.5 29.3c5.7-7.8 15-9.5 22.1-6.8-1.1 8-7.2 14.4-15.3 15.3-3.5.4-6.5-.9-8.7-3" />
+    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-opacity=".82" stroke-width="4.5" d="M34.3 42.4c4-5.4 10.1-7.7 17.2-6.7" />
+    <path fill="#102039" d="M28 67h6v8h-6zM38.5 61h6v14h-6zM49 56h6v19h-6z" opacity=".88" />
+    <path fill="#102039" d="m69.5 59.5 2.8 4.8 4.7 2.7-4.7 2.8-2.8 4.7-2.8-4.7-4.7-2.8 4.7-2.7 2.8-4.8Z" opacity=".86" />
+  </svg></span><span>MangoAdvice</span><em>Public Brief</em></a>
     <div class="nav-actions">
       <a href="./">Archive</a>
       <a href="./latest/">Latest</a>
@@ -614,8 +676,8 @@
         </div>
         <a class="latest-panel" href="./latest/">
                 <span>Latest brief</span>
-                <strong>Tue, Jul 14, 2026</strong>
-                <p>Current-run evidence supports reviewing the setup at this cutoff.</p>
+                <strong>Wed, Jul 15, 2026</strong>
+                <p>The stock is 28.2% below its 252-session high while the current run activated earnings inflection detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.</p>
               </a>
       </header>
 
@@ -625,9 +687,16 @@
             <p class="section-label">History</p>
             <h2>Previous briefs</h2>
           </div>
-          <span>13 total</span>
+          <span>14 total</span>
         </div>
-        <section class="archive-table"><a class="archive-row" href="./2026-07-14/">
+        <section class="archive-table"><a class="archive-row" href="./2026-07-15/">
+        <span class="archive-date">2026-07-15</span>
+        <div>
+          <strong>Wed, Jul 15, 2026</strong>
+          <p>Top pick NEM at 74. The stock is 28.2% below its 252-session high while the current run activated earnings inflection detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.</p>
+        </div>
+        <span class="archive-open">View brief</span>
+      </a><a class="archive-row" href="./2026-07-14/">
         <span class="archive-date">2026-07-14</span>
         <div>
           <strong>Tue, Jul 14, 2026</strong>
