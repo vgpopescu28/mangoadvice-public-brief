@@ -78,8 +78,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 74,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 14.3% ROIC and a 73/100 ownership quality score, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 28.7% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Franco-Nevada combines a 74.5% TTM operating margin, 14.3% return on invested capital, and zero debt-to-equity, giving the current pullback a durable operating base.",
+      "whyNow": "The shares are 28.7% below their 252-session high with RSI at 42.4, while the last two reported quarters beat consensus and the company has set its Q2 results process.",
       "valuationContext": "Earnings Actual Eps 2026 05 12: 2.38 ratio; Earnings Actual Eps 2026 03 10: 1.85 ratio",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -87,7 +87,6 @@
       "catalysts": [],
       "risks": [
         "Valuation still matters: The current multiples leave less room for an operating disappointment than the drawdown alone suggests.",
-        "Research risk: Valuation still matters: The current multiples leave less room for an operating disappointment than the drawdown alone suggests.",
         "Drawdown risk: A 28.7% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -98,13 +97,15 @@
         "Market Drawdown 252d High Pct: -28.7% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -149,8 +150,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 72,
       "confidence": "HIGH",
-      "thesisSummary": "The stored run shows 29.8% ROIC, a 77/100 ownership quality score, and 1.8% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 24.8% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Texas Pacific Land pairs a 74.4% TTM operating margin and 29.8% return on invested capital with near-zero debt-to-equity.",
+      "whyNow": "The stock remains 24.8% below its 252-session high, and SEC-derived Form 4 evidence records open-market purchases by Horizon Kinetics on five consecutive filing days from July 14 through July 20.",
       "valuationContext": "Free Cash Flow Yield Pct: 1.762%",
       "sourcePosture": "adequate",
       "sourceCount": 2,
@@ -158,7 +159,6 @@
       "catalysts": [],
       "risks": [
         "Premium valuation: Low free-cash-flow yield and high earnings and EBITDA multiples can amplify downside if growth expectations soften.",
-        "Research risk: Premium valuation: Low free-cash-flow yield and high earnings and EBITDA multiples can amplify downside if growth expectations soften.",
         "Drawdown risk: A 24.8% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -170,12 +170,16 @@
         "Market Drawdown 252d High Pct: -24.8% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
-          "fmp"
+          "fmp",
+          "sec"
         ],
-        "thesis": [],
+        "thesis": [
+          "fmp",
+          "sec"
+        ],
         "context": [],
         "collectedNoSignal": []
       },
@@ -220,7 +224,7 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 68,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 14.6% ROIC and a 65/100 ownership quality score, pairing operating quality with a potential long-term entry setup.",
+      "thesisSummary": "IMAX combines a 21.4% TTM operating margin, 14.6% return on invested capital, and strong 2.85 times operating-cash-flow conversion.",
       "whyNow": "A 12.8% 21-session decline and RSI of 38 coincide with a reported record $52 million worldwide IMAX debut for The Odyssey and two consecutive double-digit EPS beats.",
       "valuationContext": "Earnings Actual Eps 2026 02 25: 0.58 ratio; Earnings Actual Eps 2026 04 30: 0.17 ratio",
       "sourcePosture": "thin",
@@ -230,8 +234,7 @@
         "Quarterly results: IMAX is expected to report financial results after the market close on July 23."
       ],
       "risks": [
-        "Expectation risk: A high earnings multiple makes the case sensitive to whether one strong release becomes sustained slate-level performance.",
-        "Research risk: Expectation risk: A high earnings multiple makes the case sensitive to whether one strong release becomes sustained slate-level performance."
+        "Expectation risk: A high earnings multiple makes the case sensitive to whether one strong release becomes sustained slate-level performance."
       ],
       "watchItems": [
         "Compare the announced results with the recent EPS-beat pattern and current cash-conversion level."
@@ -240,13 +243,15 @@
         "Return On Invested Capital Pct: 14.6% return on invested capital pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -291,7 +296,7 @@
       "portfolioRole": "Valuation Dislocation / long-term DCA review",
       "score": 66,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 11.3% ROIC, a 60/100 ownership quality score, 12.1% free cash flow yield, and 8.1 P/E, pairing operating quality with a potential long-term entry setup.",
+      "thesisSummary": "APA offers a valuation-led setup with a 34.6% TTM operating margin, 12.1% free-cash-flow yield, 8.1 P/E, and 2.9 EV/EBITDA.",
       "whyNow": "The stock is 21.5% below its 252-session high, while the last two reported quarters beat consensus EPS by 24.3% and 41.3%.",
       "valuationContext": "Enterprise Value To Ebitda: 2.9394 ratio; Earnings Actual Eps 2026 02 25: 0.91 ratio; Earnings Actual Eps 2026 05 06: 1.38 ratio; Free Cash Flow Yield Pct: 12.0586%; Price To Earnings: 8.1212 ratio",
       "sourcePosture": "thin",
@@ -300,7 +305,6 @@
       "catalysts": [],
       "risks": [
         "Balance-sheet flexibility: Sub-one current coverage and moderate debt-to-equity make cash-flow durability important to the thesis.",
-        "Research risk: Balance-sheet flexibility: Sub-one current coverage and moderate debt-to-equity make cash-flow durability important to the thesis.",
         "Source concentration: The numeric score relies on one provider in this persisted run; use independent sources to verify the thesis before acting."
       ],
       "watchItems": [
@@ -313,12 +317,14 @@
         "Valuation Dislocation: Valuation Dislocation detector scored 100/100 in the persisted run."
       ],
       "sourceLimitation": "The numeric score relies on one provider in this persisted run; use independent sources to verify the thesis before acting.",
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
           "fmp"
         ],
-        "thesis": [],
+        "thesis": [
+          "fmp"
+        ],
         "context": [],
         "collectedNoSignal": []
       },
@@ -363,8 +369,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 60,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 15.2% ROIC, a 73/100 ownership quality score, and 6.7% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 45.9% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Agnico Eagle combines a 56.9% TTM operating margin, 15.2% return on invested capital, and a net-cash position with a 6.7% free-cash-flow yield.",
+      "whyNow": "The shares are 45.9% below their 252-session high with RSI at 23.1 and a 12.8 P/E, after the latest reported quarter still beat consensus EPS by 6.6%.",
       "valuationContext": "Free Cash Flow Yield Pct: 6.6664%",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -372,7 +378,6 @@
       "catalysts": [],
       "risks": [
         "Operational explanation required: The oversold reading is not sufficient by itself while current reporting identifies a mine-specific concern.",
-        "Research risk: Operational explanation required: The oversold reading is not sufficient by itself while current reporting identifies a mine-specific concern.",
         "Drawdown risk: A 45.9% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -384,13 +389,15 @@
         "Market Drawdown 252d High Pct: -45.9% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -435,8 +442,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 58,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 12.5% ROIC, a 67/100 ownership quality score, and 7.7% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 38.6% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Pan American Silver combines a 37.9% TTM operating margin, 12.5% return on invested capital, a 7.7% free-cash-flow yield, and low debt-to-equity.",
+      "whyNow": "The shares are 38.6% below their 252-session high after a 16.4% 21-session decline, while trading at 13.5 times earnings and the latest quarter modestly beat consensus.",
       "valuationContext": "Free Cash Flow Yield Pct: 7.6772%",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -444,7 +451,6 @@
       "catalysts": [],
       "risks": [
         "Commodity and integration sensitivity: The thesis depends on preserving operating quality while metals prices shape the outlook and integration remains in progress.",
-        "Research risk: Commodity and integration sensitivity: The thesis depends on preserving operating quality while metals prices shape the outlook and integration remains in progress.",
         "Drawdown risk: A 38.6% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -456,13 +462,15 @@
         "Market Drawdown 252d High Pct: -38.6% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -507,8 +515,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 58,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 27.9% ROIC, a 67/100 ownership quality score, and 1.7% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 34.7% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Western Digital currently shows a 30.8% TTM operating margin, 27.9% return on invested capital, and low debt-to-equity.",
+      "whyNow": "A 31.6% 21-session selloff has taken RSI to 29.4 and the stock 34.7% below its 252-session high, while fresh coverage records a memory-stock rebound and the latest two quarters beat consensus EPS.",
       "valuationContext": "Free Cash Flow Yield Pct: 1.7291%",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -516,7 +524,6 @@
       "catalysts": [],
       "risks": [
         "Cycle and cash conversion: The valuation and low current cash conversion make the setup dependent on continued memory-cycle execution.",
-        "Research risk: Cycle and cash conversion: The valuation and low current cash conversion make the setup dependent on continued memory-cycle execution.",
         "Drawdown risk: A 34.7% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -528,13 +535,15 @@
         "Market Drawdown 252d High Pct: -34.7% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -579,8 +588,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 57,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 32.2% ROIC, a 65/100 ownership quality score, and 2.1% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 30.8% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Novo Nordisk pairs a 45.3% TTM operating margin and 32.2% return on invested capital with an 11.8 P/E after a major de-rating.",
+      "whyNow": "The stock remains 30.8% below its 252-session high despite a recent rebound, the last two quarters beat consensus EPS, and fresh coverage records the first EU approval for oral Wegovy in weight management.",
       "valuationContext": "Free Cash Flow Yield Pct: 2.1491%",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -588,7 +597,6 @@
       "catalysts": [],
       "risks": [
         "Patent and competition: The generic approval evidence shows that product expansion must outrun emerging price and competition pressure.",
-        "Research risk: Patent and competition: The generic approval evidence shows that product expansion must outrun emerging price and competition pressure.",
         "Drawdown risk: A 30.8% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -600,13 +608,15 @@
         "Market Drawdown 252d High Pct: -30.8% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -651,8 +661,8 @@
       "portfolioRole": "Quality Pullback / long-term DCA review",
       "score": 56,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 16.4% ROIC, a 64/100 ownership quality score, and 3.6% free cash flow yield, pairing operating quality with a potential long-term entry setup.",
-      "whyNow": "The stock is 52.6% below its 252-session high while the current run activated quality pullback detectors, creating a setup worth reviewing now rather than a claim that the decline is finished.",
+      "thesisSummary": "Insulet retains a 17.5% TTM operating margin, 16.4% return on invested capital, and 2.05 times operating-cash-flow conversion through a severe share-price reset.",
+      "whyNow": "The stock is still 52.6% below its 252-session high after a 16.6% 21-session rebound, and the latest reported quarter beat consensus EPS by 19.3%.",
       "valuationContext": "Free Cash Flow Yield Pct: 3.5556%",
       "sourcePosture": "thin",
       "sourceCount": 2,
@@ -660,7 +670,6 @@
       "catalysts": [],
       "risks": [
         "Recall and legal overhang: The current research case carries explicit product-recall and securities-litigation risk, not merely weak market sentiment.",
-        "Research risk: Recall and legal overhang: The current research case carries explicit product-recall and securities-litigation risk, not merely weak market sentiment.",
         "Drawdown risk: A 52.6% drawdown can reflect business deterioration as well as a cheaper entry; confirm the operating thesis before acting."
       ],
       "watchItems": [
@@ -672,13 +681,15 @@
         "Market Drawdown 252d High Pct: -52.6% market drawdown 252d high pct.",
         "Quality Pullback: Quality Pullback detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
@@ -723,7 +734,7 @@
       "portfolioRole": "Valuation Dislocation / long-term DCA review",
       "score": 55,
       "confidence": "MEDIUM",
-      "thesisSummary": "The stored run shows 33.5% ROIC, a 70/100 ownership quality score, 6.9% free cash flow yield, and 15.6 P/E, pairing operating quality with a potential long-term entry setup.",
+      "thesisSummary": "Altria is a cash-generation and valuation case with a 50.7% TTM operating margin, 33.5% return on invested capital, and 6.9% free-cash-flow yield.",
       "whyNow": "The current case rests on a 15.6 P/E, a recent 5.6% EPS beat, and renewed attention to the smoke-free strategy, but the stock is at its 252-session high rather than in a pullback.",
       "valuationContext": "Enterprise Value To Ebitda: 12.2919 ratio; Free Cash Flow Yield Pct: 6.9164%; Price To Earnings: 15.6192 ratio",
       "sourcePosture": "thin",
@@ -731,8 +742,7 @@
       "evidenceCount": 15,
       "catalysts": [],
       "risks": [
-        "Timing and leverage: The stock is not currently discounted by its own 252-session range, and liquidity and leverage metrics deserve monitoring.",
-        "Research risk: Timing and leverage: The stock is not currently discounted by its own 252-session range, and liquidity and leverage metrics deserve monitoring."
+        "Timing and leverage: The stock is not currently discounted by its own 252-session range, and liquidity and leverage metrics deserve monitoring."
       ],
       "watchItems": [
         "Track whether future earnings evidence confirms that the smoke-free strategy is adding to, rather than consuming, cash generation."
@@ -743,13 +753,15 @@
         "Price To Earnings: 15.6 price to earnings.",
         "Valuation Dislocation: Valuation Dislocation detector scored 100/100 in the persisted run."
       ],
-      "memoProvenance": "deterministic-v1-fallback",
+      "memoProvenance": "authored-v2",
       "sourceRoles": {
         "score": [
+          "fmp"
+        ],
+        "thesis": [
           "alpha_vantage",
           "fmp"
         ],
-        "thesis": [],
         "context": [],
         "collectedNoSignal": []
       },
